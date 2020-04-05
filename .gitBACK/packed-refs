@@ -1,8 +1,0 @@
-# pack-refs with: peeled fully-peeled sorted 
-5898507d1820b39d28a140d1c8e12cfc192b6370 refs/heads/functions
-e18ee55246849da743a861a2dd84969eb9297179 refs/heads/master
-9b113487f3be63a472411a6adf643563dffbb922 refs/heads/mint-script
-08f3fc8e35c5912aaadd242180b80bef1b140f8b refs/heads/testEnvKeys
-5898507d1820b39d28a140d1c8e12cfc192b6370 refs/remotes/origin/functions
-e18ee55246849da743a861a2dd84969eb9297179 refs/remotes/origin/master
-f8377a77ff6f5b8fff25928a6e16713c6fc782ca refs/remotes/origin/mint-script

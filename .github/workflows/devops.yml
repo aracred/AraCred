@@ -14,6 +14,28 @@ jobs:
         node-version: [10.x, 12.x]
 
     steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v1
+      - name: SourceCred Cache
+        uses: actions/cache@v1
+        with:
+          # cred-action uses *workspace*/sourcecred_data as it's SOURCECRED_DIRECTORY. Only store the cache from that.
+          path: sourcecred_data/cache
+          key: SC_CACHE-${{ hashFiles('**/project.json') }}-${{ github.run_id }}
+          restore-keys: |
+            SC_CACHE-${{ hashFiles('**/project.json') }}-
+            SC_CACHE-
+      - name: Run SourceCred
+        uses: vsoch/cred-action@wip-discord-cache
+        env:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          SOURCECRED_DISCORD_TOKEN: ${{ secrets.SOURCECRED_DISCORD_TOKEN }}
+        with:
+          weights: weights.json
+          project: "@aracred"
+          project-file: project.json
+          branch-against: master
+          automated: true
       - uses: "actions/checkout@v2"
       - name: "Use Node.js ${{ matrix.node-version }}"
         uses: "actions/setup-node@v1"
