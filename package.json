@@ -1,0 +1,76 @@
+{
+  "name": "tdd-node-boilerplate",
+  "version": "0.1.1",
+  "description": "Boilerplate",
+  "license": "MIT",
+  "repository": "pythonpete32/tdd-node-boilerplate",
+  "main": "dist/index.js",
+  "author": {
+    "name": "pythonpete32",
+    "email": "pythonpete32@gmail.com",
+    "url": "https://github.com/pythonpete32"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "test": "jest",
+    "coverage": "npm test -- --coverage",
+    "postcoverage": "open-cli coverage/lcov-report/index.html",
+    "lint": "eslint .",
+    "docs": "documentation readme src --section=API",
+    "postdocs": "git add README.md",
+    "clean": "rimraf dist",
+    "prebuild": "npm run docs && npm run clean",
+    "build": "babel src -d dist",
+    "prerelease": "npm run lint && npm test && npm run build",
+    "release": "standard-version",
+    "postpublish": "git push origin master --follow-tags",
+    "secrets": "node ./src/setupAragon.js",
+    "prepTX": "node ./src/processScores.js",
+    "sendTX": "node ./src/mint.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "keywords": [
+    "generator-nod"
+  ],
+  "dependencies": {
+    "@aragon/test-helpers": "^2.1.0",
+    "@aragon/toolkit": "0.0.5",
+    "bignumber.js": "9.0.0",
+    "ethereumjs-abi": "^0.6.8",
+    "web3": "^1.2.5-rc.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.4.4",
+    "@babel/core": "7.4.5",
+    "@babel/plugin-proposal-class-properties": "7.4.4",
+    "@babel/preset-env": "7.4.5",
+    "babel-eslint": "10.0.2",
+    "babel-jest": "24.8.0",
+    "documentation": "11.0.1",
+    "eslint": "6.0.0",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-config-prettier": "5.0.0",
+    "eslint-plugin-import": "2.17.3",
+    "eslint-plugin-prettier": "3.1.0",
+    "husky": "2.4.1",
+    "jest": "24.8.0",
+    "lint-staged": "8.2.1",
+    "open-cli": "5.0.0",
+    "prettier": "1.18.2",
+    "rimraf": "2.6.3",
+    "standard-version": "6.0.1"
+  }
+}

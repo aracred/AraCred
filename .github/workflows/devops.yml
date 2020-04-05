@@ -1,0 +1,42 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: "Aracred-actions CI"
+
+on: ["push"]
+
+jobs:
+  build:
+    runs-on: "ubuntu-latest"
+
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x]
+
+    steps:
+      - uses: "actions/checkout@v2"
+      - name: "Use Node.js ${{ matrix.node-version }}"
+        uses: "actions/setup-node@v1"
+        with:
+          node-version: "${{ matrix.node-version }}"
+          GPG_KEY: "${{ secrets.GPG_KEY }}"
+      - name: Decrypt secret keys
+        run: ./decrypt_secret.sh
+        env:
+          GPG_KEY: ${{ secrets.GPG_KEY }}
+      - name: Install Aracred
+        run: npm ci
+      - name: Install Aragon
+        run: npm install -g @aragon/cli
+      - name: Decrypt keys
+        run: ./decrypt_secret.sh
+        env:
+          GPG_KEY: ${{ secrets.GPG_KEY }}
+      - name: Creating web3 provider config
+        run: npm run secrets
+      - name: Prepare transaction
+        run: npm run prepTX
+      - name: SourceCred Grain
+        run: cat transactionSettings.json
+      - name: Sending Transaction
+        run: node ./src/mint.js | sh

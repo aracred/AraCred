@@ -1,0 +1,13 @@
+0000000000000000000000000000000000000000 344f604c21a1bb0e52f056fe5b1509062d6d9e79 pythonpete32 <pythonpete32@gmail.com> 1585690075 +0100	commit (initial): initial commit
+344f604c21a1bb0e52f056fe5b1509062d6d9e79 3b17511d00582c8ed0a4b65c3ae67eb92f28253b pythonpete32 <pythonpete32@gmail.com> 1585693166 +0100	commit: Add devops.yml
+3b17511d00582c8ed0a4b65c3ae67eb92f28253b 4614dd19fce6ef8c102c7c624e54fd5f2f42f97a pythonpete32 <pythonpete32@gmail.com> 1585694635 +0100	commit: Ignore linting errors
+4614dd19fce6ef8c102c7c624e54fd5f2f42f97a c6b41a6bfe89bb2555be85c3f007898e7abc6f5f pythonpete32 <pythonpete32@gmail.com> 1585695130 +0100	commit: Run test
+c6b41a6bfe89bb2555be85c3f007898e7abc6f5f bf915c6ee459cbf808387a9c01b5124898dcf62f pythonpete32 <pythonpete32@gmail.com> 1585695311 +0100	commit: fix install
+bf915c6ee459cbf808387a9c01b5124898dcf62f fa4e2310c7bebe5539ba829385363394b6c800ca pythonpete32 <pythonpete32@gmail.com> 1585695796 +0100	commit: Add aragonCLI
+fa4e2310c7bebe5539ba829385363394b6c800ca 1cb8242c303c8f27a20387feb1b83d9f77136ab2 pythonpete32 <pythonpete32@gmail.com> 1585696033 +0100	commit: fix
+1cb8242c303c8f27a20387feb1b83d9f77136ab2 bca360da50d6d34b282eeb2f240305afbeaae10e pythonpete32 <pythonpete32@gmail.com> 1585696156 +0100	commit (merge): fix
+bca360da50d6d34b282eeb2f240305afbeaae10e 9b5a18c3fb287c15456291648909f1ad032fcf80 pythonpete32 <pythonpete32@gmail.com> 1585696271 +0100	commit: fix
+9b5a18c3fb287c15456291648909f1ad032fcf80 7cdf9d25e43f03e182580d674bbc2cfaf564107a pythonpete32 <pythonpete32@gmail.com> 1585696364 +0100	commit: fix
+7cdf9d25e43f03e182580d674bbc2cfaf564107a e3a490ddd9e2145ce27b74f901a122e1b1e96915 pythonpete32 <pythonpete32@gmail.com> 1585741412 +0100	commit: Add processScores()
+e3a490ddd9e2145ce27b74f901a122e1b1e96915 c214d6dfdc33926e47bf80a0dea9a9ce805bbaf3 pythonpete32 <pythonpete32@gmail.com> 1585841365 +0100	pull: Fast-forward
+c214d6dfdc33926e47bf80a0dea9a9ce805bbaf3 e18ee55246849da743a861a2dd84969eb9297179 pythonpete32 <pythonpete32@gmail.com> 1585853032 +0100	commit: remove mint

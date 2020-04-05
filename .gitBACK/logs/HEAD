@@ -1,0 +1,73 @@
+0000000000000000000000000000000000000000 344f604c21a1bb0e52f056fe5b1509062d6d9e79 pythonpete32 <pythonpete32@gmail.com> 1585690075 +0100	commit (initial): initial commit
+344f604c21a1bb0e52f056fe5b1509062d6d9e79 3b17511d00582c8ed0a4b65c3ae67eb92f28253b pythonpete32 <pythonpete32@gmail.com> 1585693166 +0100	commit: Add devops.yml
+3b17511d00582c8ed0a4b65c3ae67eb92f28253b 4614dd19fce6ef8c102c7c624e54fd5f2f42f97a pythonpete32 <pythonpete32@gmail.com> 1585694635 +0100	commit: Ignore linting errors
+4614dd19fce6ef8c102c7c624e54fd5f2f42f97a c6b41a6bfe89bb2555be85c3f007898e7abc6f5f pythonpete32 <pythonpete32@gmail.com> 1585695130 +0100	commit: Run test
+c6b41a6bfe89bb2555be85c3f007898e7abc6f5f bf915c6ee459cbf808387a9c01b5124898dcf62f pythonpete32 <pythonpete32@gmail.com> 1585695311 +0100	commit: fix install
+bf915c6ee459cbf808387a9c01b5124898dcf62f fa4e2310c7bebe5539ba829385363394b6c800ca pythonpete32 <pythonpete32@gmail.com> 1585695796 +0100	commit: Add aragonCLI
+fa4e2310c7bebe5539ba829385363394b6c800ca 1cb8242c303c8f27a20387feb1b83d9f77136ab2 pythonpete32 <pythonpete32@gmail.com> 1585696033 +0100	commit: fix
+1cb8242c303c8f27a20387feb1b83d9f77136ab2 bca360da50d6d34b282eeb2f240305afbeaae10e pythonpete32 <pythonpete32@gmail.com> 1585696156 +0100	commit (merge): fix
+bca360da50d6d34b282eeb2f240305afbeaae10e 9b5a18c3fb287c15456291648909f1ad032fcf80 pythonpete32 <pythonpete32@gmail.com> 1585696271 +0100	commit: fix
+9b5a18c3fb287c15456291648909f1ad032fcf80 7cdf9d25e43f03e182580d674bbc2cfaf564107a pythonpete32 <pythonpete32@gmail.com> 1585696364 +0100	commit: fix
+7cdf9d25e43f03e182580d674bbc2cfaf564107a e3a490ddd9e2145ce27b74f901a122e1b1e96915 pythonpete32 <pythonpete32@gmail.com> 1585741412 +0100	commit: Add processScores()
+e3a490ddd9e2145ce27b74f901a122e1b1e96915 e3a490ddd9e2145ce27b74f901a122e1b1e96915 pythonpete32 <pythonpete32@gmail.com> 1585741954 +0100	checkout: moving from master to functions
+e3a490ddd9e2145ce27b74f901a122e1b1e96915 d1b38bf0f05b9da4e4eb365bf881dcd6356220ce pythonpete32 <pythonpete32@gmail.com> 1585751630 +0100	commit: Create mint config
+d1b38bf0f05b9da4e4eb365bf881dcd6356220ce 3758e3740824739ab904f0c0abc454b5c517ae16 pythonpete32 <pythonpete32@gmail.com> 1585752516 +0100	commit: Fix mint config
+3758e3740824739ab904f0c0abc454b5c517ae16 5898507d1820b39d28a140d1c8e12cfc192b6370 pythonpete32 <pythonpete32@gmail.com> 1585752956 +0100	commit: m
+5898507d1820b39d28a140d1c8e12cfc192b6370 5898507d1820b39d28a140d1c8e12cfc192b6370 pythonpete32 <pythonpete32@gmail.com> 1585754865 +0100	checkout: moving from functions to mint-script
+5898507d1820b39d28a140d1c8e12cfc192b6370 455d0e670732fbc5e6191618d7293516ef278468 pythonpete32 <pythonpete32@gmail.com> 1585756646 +0100	commit: install deps
+455d0e670732fbc5e6191618d7293516ef278468 5898507d1820b39d28a140d1c8e12cfc192b6370 pythonpete32 <pythonpete32@gmail.com> 1585764747 +0100	reset: moving to HEAD~
+5898507d1820b39d28a140d1c8e12cfc192b6370 455d0e670732fbc5e6191618d7293516ef278468 pythonpete32 <pythonpete32@gmail.com> 1585765549 +0100	reset: moving to HEAD@{1}
+455d0e670732fbc5e6191618d7293516ef278468 5898507d1820b39d28a140d1c8e12cfc192b6370 pythonpete32 <pythonpete32@gmail.com> 1585765595 +0100	reset: moving to HEAD~
+5898507d1820b39d28a140d1c8e12cfc192b6370 6f651075dc035bba1676fce5f46cb4ed42a424b6 pythonpete32 <pythonpete32@gmail.com> 1585768268 +0100	commit: Import Keys
+6f651075dc035bba1676fce5f46cb4ed42a424b6 3e13755088fc1ee8a21ea32694a9594799d1eee3 pythonpete32 <pythonpete32@gmail.com> 1585768964 +0100	commit: Import Keys
+3e13755088fc1ee8a21ea32694a9594799d1eee3 23f7179e04c1cd67598bff299f53b407430f32c8 pythonpete32 <pythonpete32@gmail.com> 1585769088 +0100	commit: Import Keys
+23f7179e04c1cd67598bff299f53b407430f32c8 6f621693a6978d54b024363c6e90ac708199661b pythonpete32 <pythonpete32@gmail.com> 1585769604 +0100	commit: Import Keys
+6f621693a6978d54b024363c6e90ac708199661b 0d34b95cd143de8e7c6f2b1c989a1aafbcafdb12 pythonpete32 <pythonpete32@gmail.com> 1585770128 +0100	commit: Add tend tx
+0d34b95cd143de8e7c6f2b1c989a1aafbcafdb12 56eb8e085eb9e3a3c8e7e78e9d4f12d871e5d2c8 pythonpete32 <pythonpete32@gmail.com> 1585820269 +0100	commit: fix errors
+56eb8e085eb9e3a3c8e7e78e9d4f12d871e5d2c8 122b526112751baa8a49cf86d74472e6ae971a36 pythonpete32 <pythonpete32@gmail.com> 1585821343 +0100	commit: fix
+122b526112751baa8a49cf86d74472e6ae971a36 9b113487f3be63a472411a6adf643563dffbb922 pythonpete32 <pythonpete32@gmail.com> 1585831858 +0100	commit: send tx
+9b113487f3be63a472411a6adf643563dffbb922 e3a490ddd9e2145ce27b74f901a122e1b1e96915 pythonpete32 <pythonpete32@gmail.com> 1585841359 +0100	checkout: moving from mint-script to master
+e3a490ddd9e2145ce27b74f901a122e1b1e96915 c214d6dfdc33926e47bf80a0dea9a9ce805bbaf3 pythonpete32 <pythonpete32@gmail.com> 1585841365 +0100	pull: Fast-forward
+c214d6dfdc33926e47bf80a0dea9a9ce805bbaf3 e18ee55246849da743a861a2dd84969eb9297179 pythonpete32 <pythonpete32@gmail.com> 1585853032 +0100	commit: remove mint
+e18ee55246849da743a861a2dd84969eb9297179 e18ee55246849da743a861a2dd84969eb9297179 pythonpete32 <pythonpete32@gmail.com> 1585855497 +0100	checkout: moving from master to testEnvKeys
+e18ee55246849da743a861a2dd84969eb9297179 08f3fc8e35c5912aaadd242180b80bef1b140f8b pythonpete32 <pythonpete32@gmail.com> 1585855684 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+08f3fc8e35c5912aaadd242180b80bef1b140f8b 09f19e0faed5d4d39922da7bfe14e7d86818cf88 pythonpete32 <pythonpete32@gmail.com> 1585856092 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+09f19e0faed5d4d39922da7bfe14e7d86818cf88 054f990eb63f85f705f8b883687ce091e18e0395 pythonpete32 <pythonpete32@gmail.com> 1585856157 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+054f990eb63f85f705f8b883687ce091e18e0395 887a2664e5cca85aa0d9ec18f15bf646a79b5759 pythonpete32 <pythonpete32@gmail.com> 1585856612 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+887a2664e5cca85aa0d9ec18f15bf646a79b5759 d4d35522fcd12214560f82e3a4061d04572e5f13 pythonpete32 <pythonpete32@gmail.com> 1585856671 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+d4d35522fcd12214560f82e3a4061d04572e5f13 ed8d81abd2a15e3c356bec03cbbdda36c6987bfb pythonpete32 <pythonpete32@gmail.com> 1585856739 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+ed8d81abd2a15e3c356bec03cbbdda36c6987bfb e1482eacc202c1be88da29e247bc3ff0ffbace85 pythonpete32 <pythonpete32@gmail.com> 1585857563 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+e1482eacc202c1be88da29e247bc3ff0ffbace85 fe64c45de6e05f2d413dbff3c05e37f287f29f70 pythonpete32 <pythonpete32@gmail.com> 1585857832 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+fe64c45de6e05f2d413dbff3c05e37f287f29f70 ede17d789d883072e8409b20263723c9c144e7d2 pythonpete32 <pythonpete32@gmail.com> 1585893344 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+ede17d789d883072e8409b20263723c9c144e7d2 328031b7aa325edf976d87c9780f46e9e70d506e pythonpete32 <pythonpete32@gmail.com> 1585893436 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+328031b7aa325edf976d87c9780f46e9e70d506e cb53d68e400ed4c78ce36d9358517f4ba9f4f3fb pythonpete32 <pythonpete32@gmail.com> 1585893518 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+cb53d68e400ed4c78ce36d9358517f4ba9f4f3fb 43d0ae1287eae2d129878655f49b5bb7986973af pythonpete32 <pythonpete32@gmail.com> 1585893574 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+43d0ae1287eae2d129878655f49b5bb7986973af 02e0e0d3348ebbd23ef78d755f4b22a33304a86a pythonpete32 <pythonpete32@gmail.com> 1585893624 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+02e0e0d3348ebbd23ef78d755f4b22a33304a86a 8136f96f621f986ab154ee6971b74485dd31d2f8 pythonpete32 <pythonpete32@gmail.com> 1585894365 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+8136f96f621f986ab154ee6971b74485dd31d2f8 80a4c12b3333a2c06345fa92ad8b73d7db52dae2 pythonpete32 <pythonpete32@gmail.com> 1585894528 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+80a4c12b3333a2c06345fa92ad8b73d7db52dae2 c22e0decc5269c52fcd458cb0a7770704a171860 pythonpete32 <pythonpete32@gmail.com> 1585897995 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+c22e0decc5269c52fcd458cb0a7770704a171860 2d61d3bfda50cc8fd27a8935ae6cf180eb83b165 pythonpete32 <pythonpete32@gmail.com> 1585898266 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+2d61d3bfda50cc8fd27a8935ae6cf180eb83b165 692a48bd8e230b91a0a1fe33ea1e85fffee67c21 pythonpete32 <pythonpete32@gmail.com> 1585899158 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+692a48bd8e230b91a0a1fe33ea1e85fffee67c21 64f7a876ce2f1dd83d4fcfb50a586473717f9226 pythonpete32 <pythonpete32@gmail.com> 1585899458 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+64f7a876ce2f1dd83d4fcfb50a586473717f9226 84e608154fbe27fd2807b04815174e8150682940 pythonpete32 <pythonpete32@gmail.com> 1585899563 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+84e608154fbe27fd2807b04815174e8150682940 71940c56b5685354206da34b3d518459c31fe3dc pythonpete32 <pythonpete32@gmail.com> 1585899998 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+71940c56b5685354206da34b3d518459c31fe3dc 847813df905e8479b04d31359a880516e8307573 pythonpete32 <pythonpete32@gmail.com> 1585901663 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+847813df905e8479b04d31359a880516e8307573 2301c8b178553feee094a3be42215daf39ac3853 pythonpete32 <pythonpete32@gmail.com> 1585901822 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+2301c8b178553feee094a3be42215daf39ac3853 883f5dfa83c22fc51d36a806588ad0e97d21aaed pythonpete32 <pythonpete32@gmail.com> 1585902185 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+883f5dfa83c22fc51d36a806588ad0e97d21aaed 1a000f9a35692dc438c79f52d2a5ff551ecbca61 pythonpete32 <pythonpete32@gmail.com> 1585902439 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+1a000f9a35692dc438c79f52d2a5ff551ecbca61 965a2c67c995401d4960b2abc921c2daef12a6f9 pythonpete32 <pythonpete32@gmail.com> 1585902502 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+965a2c67c995401d4960b2abc921c2daef12a6f9 46976741531a997ff23d30c0337ca5286d66168d pythonpete32 <pythonpete32@gmail.com> 1585902879 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+46976741531a997ff23d30c0337ca5286d66168d d4b25ef6fa7891f7e98c27699ae03aa66a7be37b pythonpete32 <pythonpete32@gmail.com> 1585903041 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+d4b25ef6fa7891f7e98c27699ae03aa66a7be37b 70f774c43945251c41e40836f04067efae841449 pythonpete32 <pythonpete32@gmail.com> 1585903259 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+70f774c43945251c41e40836f04067efae841449 d639ba66464d0b060dfabd666adfb0a646cdb528 pythonpete32 <pythonpete32@gmail.com> 1585903341 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+d639ba66464d0b060dfabd666adfb0a646cdb528 91e09a4e1ae6ecce91d4939f10eb498d78fe2104 pythonpete32 <pythonpete32@gmail.com> 1585903471 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+91e09a4e1ae6ecce91d4939f10eb498d78fe2104 f39bffe889c32e583e5eb133b1ddeb7cff206df1 pythonpete32 <pythonpete32@gmail.com> 1585903596 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+f39bffe889c32e583e5eb133b1ddeb7cff206df1 42f24e3a6b3ba9a725eb774547ada909d45feefc pythonpete32 <pythonpete32@gmail.com> 1585903708 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+42f24e3a6b3ba9a725eb774547ada909d45feefc 5121892d3eed55454af2cbc8e139e9ab96abac24 pythonpete32 <pythonpete32@gmail.com> 1585903830 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+5121892d3eed55454af2cbc8e139e9ab96abac24 8717972e7a9a99263674ee6858d287ab659bcbb5 pythonpete32 <pythonpete32@gmail.com> 1585905928 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+8717972e7a9a99263674ee6858d287ab659bcbb5 293ccd90b0a3fe920e0cc87911c75ab7cdc1cfe2 pythonpete32 <pythonpete32@gmail.com> 1585906845 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+293ccd90b0a3fe920e0cc87911c75ab7cdc1cfe2 0a3dfb81d505573de49a6711df6d25eb7bf7f303 pythonpete32 <pythonpete32@gmail.com> 1585906927 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+0a3dfb81d505573de49a6711df6d25eb7bf7f303 f422722953ad43f87d41a2698d61534b841cf0ec pythonpete32 <pythonpete32@gmail.com> 1585906964 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+f422722953ad43f87d41a2698d61534b841cf0ec 10089ac272db2e9994f9f7d8da19ce7c9ca298dd pythonpete32 <pythonpete32@gmail.com> 1585907035 +0100	commit: test github is giving the keys out right, ***These are not real keys*** steal away ;p
+10089ac272db2e9994f9f7d8da19ce7c9ca298dd b9803cbb6837273cc49e23a840e92178b4d67d37 pythonpete32 <pythonpete32@gmail.com> 1585908017 +0100	commit: ***These are not real keys*** steal away ;p
+b9803cbb6837273cc49e23a840e92178b4d67d37 16cebd01089dd417d422b66d06daa4241d65b904 pythonpete32 <pythonpete32@gmail.com> 1585910812 +0100	commit: Mints cred to hardcoded DAO
