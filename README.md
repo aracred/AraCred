@@ -2,7 +2,7 @@
 
 # Aracred-actions
 
-> **_ WARNING: _** _DO NOT USE THS ON MAINNET_
+> **_ WARNING: _** _DO NOT USE THS ON MAINNET_, yet
 
 Automates the process of calculating Sourcecred Scores and creating a vote to mint them as tokens in an Aragon DAO
 
@@ -11,7 +11,7 @@ Automates the process of calculating Sourcecred Scores and creating a vote to mi
 ### 1. clone repo
 
 ```
-git clone https://github.com/pythonpete32/aracred-actions.git && cd aracred-actions
+git clone https://github.com/aracred/AraCred.git && cd aracred-actions
 ```
 
 ### 2. Set Encrypt Aracred Keys
