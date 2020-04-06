@@ -18,21 +18,13 @@
     "discourseServer": {},
     "identities": [
       {
-        "username": "Beanow",
-        "aliases": ["github/Beanow", "discord/143776454050709505"]
-      },
-      {
-        "username": "hammadj",
-        "aliases": [
-          "github/hammadj",
-          "discord/118260545211072517",
-          "discourse/METADREAMER"
-        ]
-      },
-      {
         "username": "YalorMewn",
         "aliases": [
           "github/YalorMewn",
+          "discord/360481131029856256",
+          "discourse/Yalortackson"
+        ]
+      },
           "discord/360481131029856256",
           "discourse/Yalortackson"
         ]
