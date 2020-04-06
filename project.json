@@ -15,7 +15,9 @@
         "🙏": 1
       }
     },
-    "discourseServer": {},
+    "discourseServer": {
+      "serverUrl": "https://discourse.sourcecred.io"
+    },
     "identities": [
       {
         "username": "burrrata",
