@@ -37,4 +37,3 @@ jobs:
           project-file: project.json
           branch-against: master
           automated: "true"
-      - uses: "actions/checkout@v2"
