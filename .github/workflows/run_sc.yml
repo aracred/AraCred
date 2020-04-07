@@ -2,10 +2,13 @@ name: "Run SourceCred"
 
 on:
   # Trigger on merging to master.
-  push
+  push:
+    branches:
+      - master
   # As well as every 6 hours.
   schedule:
     - cron: 0 */6 * * *
+
 jobs:
   build:
     runs-on: "ubuntu-latest"
