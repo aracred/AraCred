@@ -28,7 +28,7 @@
     "release": "standard-version",
     "postpublish": "git push origin master --follow-tags",
     "secrets": "node ./src/setupAragon.js",
-    "prepTX": "node ./src/processScores.js",
+    "prepTX": "node ./src/processGrain.js",
     "sendTX": "node ./src/mint.js"
   },
   "husky": {
