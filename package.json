@@ -28,7 +28,7 @@
     "release": "standard-version",
     "postpublish": "git push origin master --follow-tags",
     "secrets": "node ./src/setupAragon.js",
-    "prepTX": "node ./src/processScores.js",
+    "prepTX": "node ./src/processGrain.js",
     "sendTX": "node ./src/mint.js"
   },
   "husky": {
@@ -48,6 +48,7 @@
   "dependencies": {
     "@aragon/test-helpers": "^2.1.0",
     "@aragon/toolkit": "0.0.5",
+    "bignumber": "1.1.0",
     "bignumber.js": "9.0.0",
     "ethereumjs-abi": "^0.6.8",
     "web3": "^1.2.5-rc.0"
