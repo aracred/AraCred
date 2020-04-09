@@ -4,7 +4,7 @@ on:
   # Trigger on merging to master.
   push:
     branches:
-      - master
+      - split-config
   # As well as every 6 hours.
   schedule:
     - cron: 0 */6 * * *
