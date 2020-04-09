@@ -21,9 +21,11 @@ git clone https://github.com/aracred/AraCred.git && cd aracred-actions
 configure your DAO Addresses in `/config/dao.json`
 
 ```js
+{
   daoAddress: 'YOUR_DAO_ADDRESS',
   tokenManagerAddress: 'YOUR_TOKEN_MANAGER_ADDRESS',
   votingAddress: 'YOUR_VOTING_ADDRESS',
+}
 ```
 
 ### 3. set up your new repo
