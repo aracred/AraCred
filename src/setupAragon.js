@@ -1,4 +1,10 @@
 #!/usr/bin/env node
+/*
+ * Tales two commandline arguments
+ * [0]: INFURA_KEY
+ * [1]: PRIVATE_KEY
+ */
+
 const fs = require('fs');
 
 const args = process.argv.slice(2);
@@ -22,18 +28,22 @@ const saveFile = () => {
 			fs.mkdirSync(dir);
 			console.log('created `~/.aragon` file');
 		}
-		console.log(fileContent());
-		fs.writeFile('./rinkeby_key.json', fileContent(), (err) => {
-			if (err) {
-				console.log('Error writing file', err);
-			} else {
-				console.log('Successfully setup keys');
-			}
-		});
+		fs.writeFile(
+			`/home/${userName}/.aragon/rinkeby_key.json`,
+			fileContent(),
+			(err) => {
+				if (err) {
+					console.log('Error writing file', err);
+				} else {
+					console.log('Successfully setup keys');
+				}
+			},
+		);
 	} catch (err) {
 		console.error(err);
 		process.exit(-1);
 	}
 };
+
 saveFile();
 module.export = {fileContent, saveFile};
