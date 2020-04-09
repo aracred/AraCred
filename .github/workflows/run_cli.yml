@@ -27,3 +27,5 @@ jobs:
         run: npm ci
       - name: Install Aragon
         run: npm install -g @aragon/cli
+      - name: Prepare transaction
+        run: node ./src/processGrain.js
