@@ -28,7 +28,7 @@
         }
     },
     "lint-staged": {
-        "**/*.+(js|md|ts|yml|yaml|json)": [
+        "**/*.+(js|md|ts|yml|yaml)": [
             "eslint --fix",
             "prettier --write",
             "jest --findRelatedTests",
