@@ -23,3 +23,7 @@ jobs:
         env:
           INFURA_KEY: "${{ secrets.INFURA_KEY }}"
           PRIVATE_KEY: "${{ secrets.PRIVATE_KEY }}"
+      - name: Install Aracred
+        run: npm ci
+      - name: Install Aragon
+        run: npm install -g @aragon/cli
