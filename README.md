@@ -1,4 +1,5 @@
-![Node.js CI](https://github.com/pythonpete32/aracred-actions/workflows/Node.js%20CI/badge.svg)
+![Run aragonCLI](https://github.com/aracred/AraCred/workflows/Run%20aragonCLI/badge.svg)
+![Run SourceCred](https://github.com/aracred/AraCred/workflows/Run%20SourceCred/badge.svg)
 
 # Aracred-actions
 
