@@ -1,0 +1,12 @@
+machine:
+  node:
+    version: 6.0.0
+dependencies:
+  pre:
+    - "npm i -g istanbul"
+    - "npm i -g eslint"
+    - "npm i -g coveralls"
+test:
+  post:
+    - mkdir -p $CIRCLE_ARTIFACTS/
+    - mv ./coverage/lcov.info  $CIRCLE_ARTIFACTS/coverage-report

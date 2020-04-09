@@ -1,0 +1,29 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "name": "_reenterNonReentrant",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_mock",
+          "type": "address"
+        }
+      ],
+      "name": "reenter",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ]
+}

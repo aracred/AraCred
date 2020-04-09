@@ -1,11 +1,8 @@
 /**
- * This function says hello.
- * @param name Some name to say hello for.
- * @returns The hello.
+ * This method has hierarchical params
+ * @param {Object} animals different kinds of animals
+ * @param {String} animals.fishes number of kinds of fish
  */
-const sayHello = name => `Hello, ${name}!`
-
-export default sayHello
-
-// TODO: Refactor into vinilla js
-// remove babel
+function fishesAndFoxes({ fishes, foxes }) {
+  return fishes + foxes
+}

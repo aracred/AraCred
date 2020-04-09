@@ -1,0 +1,475 @@
+{
+  "contractName": "Uint256Mock",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "a",
+          "type": "uint256"
+        }
+      ],
+      "name": "convert",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint64"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b506101a3806100206000396000f3006080604052600436106100405763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663a3908e1b8114610045575b600080fd5b34801561005157600080fd5b5061005d60043561007a565b6040805167ffffffffffffffff9092168252519081900360200190f35b60006100858261008b565b92915050565b60408051808201909152601581527f55494e5436345f4e554d4245525f544f4f5f4249470000000000000000000000602082015260009067ffffffffffffffff831115610170576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825283818151815260200191508051906020019080838360005b8381101561013557818101518382015260200161011d565b50505050905090810190601f1680156101625780820380516001836020036101000a031916815260200191505b509250505060405180910390fd5b50909190505600a165627a7a72305820a34a31f280eb8132b4387f1550eb194df2ba8d9f772c8493df18da831495d8fc0029",
+  "deployedBytecode": "0x6080604052600436106100405763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663a3908e1b8114610045575b600080fd5b34801561005157600080fd5b5061005d60043561007a565b6040805167ffffffffffffffff9092168252519081900360200190f35b60006100858261008b565b92915050565b60408051808201909152601581527f55494e5436345f4e554d4245525f544f4f5f4249470000000000000000000000602082015260009067ffffffffffffffff831115610170576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825283818151815260200191508051906020019080838360005b8381101561013557818101518382015260200161011d565b50505050905090810190601f1680156101625780820380516001836020036101000a031916815260200191505b509250505060405180910390fd5b50909190505600a165627a7a72305820a34a31f280eb8132b4387f1550eb194df2ba8d9f772c8493df18da831495d8fc0029",
+  "sourceMap": "72:161:83:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;72:161:83;;;;;;;",
+  "deployedSourceMap": "72:161:83:-;;;;;;;;;;;;;;;;;;;;;;;138:93;;8:9:-1;5:2;;;30:1;27;20:12;5:2;-1:-1;138:93:83;;;;;;;;;;;;;;;;;;;;;;;;;187:6;212:12;:1;:10;:12::i;:::-;205:19;138:93;-1:-1:-1;;138:93:83:o;188:149:28:-;283:20;;;;;;;;;;;;;;;;;240:6;;271:10;266:15;;;258:46;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;258:46:28;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;328:1:28;;188:149;-1:-1:-1;188:149:28:o",
+  "source": "pragma solidity 0.4.24;\n\nimport \"../../../common/Uint256Helpers.sol\";\n\n\ncontract Uint256Mock {\n    using Uint256Helpers for uint256;\n\n    function convert(uint256 a) public pure returns (uint64) {\n        return a.toUint64();\n    }\n}\n",
+  "sourcePath": "/Users/facu/Documents/work/aragon/dev/aragonOS/contracts/test/mocks/common/Uint256Mock.sol",
+  "ast": {
+    "absolutePath": "/Users/facu/Documents/work/aragon/dev/aragonOS/contracts/test/mocks/common/Uint256Mock.sol",
+    "exportedSymbols": {
+      "Uint256Mock": [
+        12278
+      ]
+    },
+    "id": 12279,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 12261,
+        "literals": [
+          "solidity",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:83"
+      },
+      {
+        "absolutePath": "/Users/facu/Documents/work/aragon/dev/aragonOS/contracts/common/Uint256Helpers.sol",
+        "file": "../../../common/Uint256Helpers.sol",
+        "id": 12262,
+        "nodeType": "ImportDirective",
+        "scope": 12279,
+        "sourceUnit": 3709,
+        "src": "25:44:83",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 12278,
+        "linearizedBaseContracts": [
+          12278
+        ],
+        "name": "Uint256Mock",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 12265,
+            "libraryName": {
+              "contractScope": null,
+              "id": 12263,
+              "name": "Uint256Helpers",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 3708,
+              "src": "105:14:83",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Uint256Helpers_$3708",
+                "typeString": "library Uint256Helpers"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "99:33:83",
+            "typeName": {
+              "id": 12264,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "124:7:83",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            }
+          },
+          {
+            "body": {
+              "id": 12276,
+              "nodeType": "Block",
+              "src": "195:36:83",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 12272,
+                        "name": "a",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12267,
+                        "src": "212:1:83",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "id": 12273,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "toUint64",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 3707,
+                      "src": "212:10:83",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_uint256_$returns$_t_uint64_$bound_to$_t_uint256_$",
+                        "typeString": "function (uint256) pure returns (uint64)"
+                      }
+                    },
+                    "id": 12274,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "212:12:83",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "functionReturnParameters": 12271,
+                  "id": 12275,
+                  "nodeType": "Return",
+                  "src": "205:19:83"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12277,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "convert",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12268,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12267,
+                  "name": "a",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12277,
+                  "src": "155:9:83",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 12266,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "155:7:83",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "154:11:83"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 12271,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12270,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12277,
+                  "src": "187:6:83",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  },
+                  "typeName": {
+                    "id": 12269,
+                    "name": "uint64",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "187:6:83",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "186:8:83"
+            },
+            "scope": 12278,
+            "src": "138:93:83",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 12279,
+        "src": "72:161:83"
+      }
+    ],
+    "src": "0:234:83"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/facu/Documents/work/aragon/dev/aragonOS/contracts/test/mocks/common/Uint256Mock.sol",
+    "exportedSymbols": {
+      "Uint256Mock": [
+        12278
+      ]
+    },
+    "id": 12279,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 12261,
+        "literals": [
+          "solidity",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:83"
+      },
+      {
+        "absolutePath": "/Users/facu/Documents/work/aragon/dev/aragonOS/contracts/common/Uint256Helpers.sol",
+        "file": "../../../common/Uint256Helpers.sol",
+        "id": 12262,
+        "nodeType": "ImportDirective",
+        "scope": 12279,
+        "sourceUnit": 3709,
+        "src": "25:44:83",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 12278,
+        "linearizedBaseContracts": [
+          12278
+        ],
+        "name": "Uint256Mock",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 12265,
+            "libraryName": {
+              "contractScope": null,
+              "id": 12263,
+              "name": "Uint256Helpers",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 3708,
+              "src": "105:14:83",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Uint256Helpers_$3708",
+                "typeString": "library Uint256Helpers"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "99:33:83",
+            "typeName": {
+              "id": 12264,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "124:7:83",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            }
+          },
+          {
+            "body": {
+              "id": 12276,
+              "nodeType": "Block",
+              "src": "195:36:83",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 12272,
+                        "name": "a",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 12267,
+                        "src": "212:1:83",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "id": 12273,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "toUint64",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 3707,
+                      "src": "212:10:83",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_uint256_$returns$_t_uint64_$bound_to$_t_uint256_$",
+                        "typeString": "function (uint256) pure returns (uint64)"
+                      }
+                    },
+                    "id": 12274,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "212:12:83",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "functionReturnParameters": 12271,
+                  "id": 12275,
+                  "nodeType": "Return",
+                  "src": "205:19:83"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12277,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "convert",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12268,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12267,
+                  "name": "a",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12277,
+                  "src": "155:9:83",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 12266,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "155:7:83",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "154:11:83"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 12271,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12270,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12277,
+                  "src": "187:6:83",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  },
+                  "typeName": {
+                    "id": 12269,
+                    "name": "uint64",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "187:6:83",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "186:8:83"
+            },
+            "scope": 12278,
+            "src": "138:93:83",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 12279,
+        "src": "72:161:83"
+      }
+    ],
+    "src": "0:234:83"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2019-09-03T15:25:09.546Z"
+}

@@ -1,0 +1,1044 @@
+{
+  "contractName": "ENSConstantsMock",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getEnsRoot",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getEthTldLabel",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getEthTldNode",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getPublicResolverLabel",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getPublicResolverNode",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b506101ad806100206000396000f30060806040526004361061006c5763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166382bc5e1b8114610071578063917494841461009857806398d81a1c146100ad578063a45f19bc146100c2578063d668c464146100d7575b600080fd5b34801561007d57600080fd5b506100866100ec565b60408051918252519081900360200190f35b3480156100a457600080fd5b50610086610110565b3480156100b957600080fd5b50610086610134565b3480156100ce57600080fd5b50610086610139565b3480156100e357600080fd5b5061008661015d565b7f329539a1d23af1810c48a07fe7fc66a3b34fbc8b37e9b3cdb97bb88ceab7e4bf90565b7f93cdeb708b7545dc668eb9280176169d1c33cfd8ed6f04690a0bcc88a93fc4ae90565b600090565b7ffdd5d5de6dd63db72bbc2d487944ba13bf775b50a80805fe6fcaba9b0fba88f590565b7f4f5b812789fc606be1b3b16908db13fc7a9adf7ca72641f84d75b47069d3d7f0905600a165627a7a72305820fce3d3ec389173dfe19cee4e650e4801e0506734dc05bebbe8970fe37befce810029",
+  "deployedBytecode": "0x60806040526004361061006c5763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166382bc5e1b8114610071578063917494841461009857806398d81a1c146100ad578063a45f19bc146100c2578063d668c464146100d7575b600080fd5b34801561007d57600080fd5b506100866100ec565b60408051918252519081900360200190f35b3480156100a457600080fd5b50610086610110565b3480156100b957600080fd5b50610086610134565b3480156100ce57600080fd5b50610086610139565b3480156100e357600080fd5b5061008661015d565b7f329539a1d23af1810c48a07fe7fc66a3b34fbc8b37e9b3cdb97bb88ceab7e4bf90565b7f93cdeb708b7545dc668eb9280176169d1c33cfd8ed6f04690a0bcc88a93fc4ae90565b600090565b7ffdd5d5de6dd63db72bbc2d487944ba13bf775b50a80805fe6fcaba9b0fba88f590565b7f4f5b812789fc606be1b3b16908db13fc7a9adf7ca72641f84d75b47069d3d7f0905600a165627a7a72305820fce3d3ec389173dfe19cee4e650e4801e0506734dc05bebbe8970fe37befce810029",
+  "sourceMap": "67:504:84:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;67:504:84;;;;;;;",
+  "deployedSourceMap": "67:504:84:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;368:99;;8:9:-1;5:2;;;30:1;27;20:12;5:2;368:99:84;;;;;;;;;;;;;;;;;;;;282:81;;8:9:-1;5:2;;;30:1;27;20:12;5:2;282:81:84;;;;115:74;;8:9:-1;5:2;;;30:1;27;20:12;5:2;115:74:84;;;;472:97;;8:9:-1;5:2;;;30:1;27;20:12;5:2;472:97:84;;;;194:83;;8:9:-1;5:2;;;30:1;27;20:12;5:2;194:83:84;;;;368:99;887:66:31;368:99:84;:::o;282:81::-;765:66:31;282:81:84;:::o;115:74::-;160:7;115:74;:::o;472:97::-;1008:66:31;472:97:84;:::o;194:83::-;652:66:31;194:83:84;:::o",
+  "source": "pragma solidity 0.4.24;\n\nimport \"../../../ens/ENSConstants.sol\";\n\n\ncontract ENSConstantsMock is ENSConstants {\n    function getEnsRoot() external pure returns (bytes32) { return ENS_ROOT; }\n    function getEthTldLabel() external pure returns (bytes32) { return ETH_TLD_LABEL; }\n    function getEthTldNode() external pure returns (bytes32) { return ETH_TLD_NODE; }\n    function getPublicResolverLabel() external pure returns (bytes32) { return PUBLIC_RESOLVER_LABEL; }\n    function getPublicResolverNode() external pure returns (bytes32) { return PUBLIC_RESOLVER_NODE; }\n}\n",
+  "sourcePath": "/Users/facu/Documents/work/aragon/dev/aragonOS/contracts/test/mocks/ens/ENSConstantsMock.sol",
+  "ast": {
+    "absolutePath": "/Users/facu/Documents/work/aragon/dev/aragonOS/contracts/test/mocks/ens/ENSConstantsMock.sol",
+    "exportedSymbols": {
+      "ENSConstantsMock": [
+        12324
+      ]
+    },
+    "id": 12325,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 12280,
+        "literals": [
+          "solidity",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:84"
+      },
+      {
+        "absolutePath": "/Users/facu/Documents/work/aragon/dev/aragonOS/contracts/ens/ENSConstants.sol",
+        "file": "../../../ens/ENSConstants.sol",
+        "id": 12281,
+        "nodeType": "ImportDirective",
+        "scope": 12325,
+        "sourceUnit": 3920,
+        "src": "25:39:84",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 12282,
+              "name": "ENSConstants",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 3919,
+              "src": "96:12:84",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ENSConstants_$3919",
+                "typeString": "contract ENSConstants"
+              }
+            },
+            "id": 12283,
+            "nodeType": "InheritanceSpecifier",
+            "src": "96:12:84"
+          }
+        ],
+        "contractDependencies": [
+          3919
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 12324,
+        "linearizedBaseContracts": [
+          12324,
+          3919
+        ],
+        "name": "ENSConstantsMock",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 12290,
+              "nodeType": "Block",
+              "src": "169:20:84",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 12288,
+                    "name": "ENS_ROOT",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 3906,
+                    "src": "178:8:84",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "functionReturnParameters": 12287,
+                  "id": 12289,
+                  "nodeType": "Return",
+                  "src": "171:15:84"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12291,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getEnsRoot",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12284,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "134:2:84"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 12287,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12286,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12291,
+                  "src": "160:7:84",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 12285,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "160:7:84",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "159:9:84"
+            },
+            "scope": 12324,
+            "src": "115:74:84",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 12298,
+              "nodeType": "Block",
+              "src": "252:25:84",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 12296,
+                    "name": "ETH_TLD_LABEL",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 3909,
+                    "src": "261:13:84",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "functionReturnParameters": 12295,
+                  "id": 12297,
+                  "nodeType": "Return",
+                  "src": "254:20:84"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12299,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getEthTldLabel",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12292,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "217:2:84"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 12295,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12294,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12299,
+                  "src": "243:7:84",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 12293,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "243:7:84",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "242:9:84"
+            },
+            "scope": 12324,
+            "src": "194:83:84",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 12306,
+              "nodeType": "Block",
+              "src": "339:24:84",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 12304,
+                    "name": "ETH_TLD_NODE",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 3912,
+                    "src": "348:12:84",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "functionReturnParameters": 12303,
+                  "id": 12305,
+                  "nodeType": "Return",
+                  "src": "341:19:84"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12307,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getEthTldNode",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12300,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "304:2:84"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 12303,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12302,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12307,
+                  "src": "330:7:84",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 12301,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "330:7:84",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "329:9:84"
+            },
+            "scope": 12324,
+            "src": "282:81:84",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 12314,
+              "nodeType": "Block",
+              "src": "434:33:84",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 12312,
+                    "name": "PUBLIC_RESOLVER_LABEL",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 3915,
+                    "src": "443:21:84",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "functionReturnParameters": 12311,
+                  "id": 12313,
+                  "nodeType": "Return",
+                  "src": "436:28:84"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12315,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getPublicResolverLabel",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12308,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "399:2:84"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 12311,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12310,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12315,
+                  "src": "425:7:84",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 12309,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "425:7:84",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "424:9:84"
+            },
+            "scope": 12324,
+            "src": "368:99:84",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 12322,
+              "nodeType": "Block",
+              "src": "537:32:84",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 12320,
+                    "name": "PUBLIC_RESOLVER_NODE",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 3918,
+                    "src": "546:20:84",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "functionReturnParameters": 12319,
+                  "id": 12321,
+                  "nodeType": "Return",
+                  "src": "539:27:84"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12323,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getPublicResolverNode",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12316,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "502:2:84"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 12319,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12318,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12323,
+                  "src": "528:7:84",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 12317,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "528:7:84",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "527:9:84"
+            },
+            "scope": 12324,
+            "src": "472:97:84",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 12325,
+        "src": "67:504:84"
+      }
+    ],
+    "src": "0:572:84"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/facu/Documents/work/aragon/dev/aragonOS/contracts/test/mocks/ens/ENSConstantsMock.sol",
+    "exportedSymbols": {
+      "ENSConstantsMock": [
+        12324
+      ]
+    },
+    "id": 12325,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 12280,
+        "literals": [
+          "solidity",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:84"
+      },
+      {
+        "absolutePath": "/Users/facu/Documents/work/aragon/dev/aragonOS/contracts/ens/ENSConstants.sol",
+        "file": "../../../ens/ENSConstants.sol",
+        "id": 12281,
+        "nodeType": "ImportDirective",
+        "scope": 12325,
+        "sourceUnit": 3920,
+        "src": "25:39:84",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 12282,
+              "name": "ENSConstants",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 3919,
+              "src": "96:12:84",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_ENSConstants_$3919",
+                "typeString": "contract ENSConstants"
+              }
+            },
+            "id": 12283,
+            "nodeType": "InheritanceSpecifier",
+            "src": "96:12:84"
+          }
+        ],
+        "contractDependencies": [
+          3919
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 12324,
+        "linearizedBaseContracts": [
+          12324,
+          3919
+        ],
+        "name": "ENSConstantsMock",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 12290,
+              "nodeType": "Block",
+              "src": "169:20:84",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 12288,
+                    "name": "ENS_ROOT",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 3906,
+                    "src": "178:8:84",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "functionReturnParameters": 12287,
+                  "id": 12289,
+                  "nodeType": "Return",
+                  "src": "171:15:84"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12291,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getEnsRoot",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12284,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "134:2:84"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 12287,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12286,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12291,
+                  "src": "160:7:84",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 12285,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "160:7:84",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "159:9:84"
+            },
+            "scope": 12324,
+            "src": "115:74:84",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 12298,
+              "nodeType": "Block",
+              "src": "252:25:84",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 12296,
+                    "name": "ETH_TLD_LABEL",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 3909,
+                    "src": "261:13:84",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "functionReturnParameters": 12295,
+                  "id": 12297,
+                  "nodeType": "Return",
+                  "src": "254:20:84"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12299,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getEthTldLabel",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12292,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "217:2:84"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 12295,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12294,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12299,
+                  "src": "243:7:84",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 12293,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "243:7:84",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "242:9:84"
+            },
+            "scope": 12324,
+            "src": "194:83:84",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 12306,
+              "nodeType": "Block",
+              "src": "339:24:84",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 12304,
+                    "name": "ETH_TLD_NODE",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 3912,
+                    "src": "348:12:84",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "functionReturnParameters": 12303,
+                  "id": 12305,
+                  "nodeType": "Return",
+                  "src": "341:19:84"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12307,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getEthTldNode",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12300,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "304:2:84"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 12303,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12302,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12307,
+                  "src": "330:7:84",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 12301,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "330:7:84",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "329:9:84"
+            },
+            "scope": 12324,
+            "src": "282:81:84",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 12314,
+              "nodeType": "Block",
+              "src": "434:33:84",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 12312,
+                    "name": "PUBLIC_RESOLVER_LABEL",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 3915,
+                    "src": "443:21:84",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "functionReturnParameters": 12311,
+                  "id": 12313,
+                  "nodeType": "Return",
+                  "src": "436:28:84"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12315,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getPublicResolverLabel",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12308,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "399:2:84"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 12311,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12310,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12315,
+                  "src": "425:7:84",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 12309,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "425:7:84",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "424:9:84"
+            },
+            "scope": 12324,
+            "src": "368:99:84",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "external"
+          },
+          {
+            "body": {
+              "id": 12322,
+              "nodeType": "Block",
+              "src": "537:32:84",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 12320,
+                    "name": "PUBLIC_RESOLVER_NODE",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 3918,
+                    "src": "546:20:84",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "functionReturnParameters": 12319,
+                  "id": 12321,
+                  "nodeType": "Return",
+                  "src": "539:27:84"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12323,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getPublicResolverNode",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12316,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "502:2:84"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 12319,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12318,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12323,
+                  "src": "528:7:84",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 12317,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "528:7:84",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "527:9:84"
+            },
+            "scope": 12324,
+            "src": "472:97:84",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 12325,
+        "src": "67:504:84"
+      }
+    ],
+    "src": "0:572:84"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2019-09-03T15:25:09.546Z"
+}

@@ -1,0 +1,2062 @@
+{
+  "contractName": "FakeAppConstants",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "FAKE_APP_ID",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6080604052348015600f57600080fd5b5060c88061001e6000396000f300608060405260043610603e5763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416630ef7fc6d81146043575b600080fd5b348015604e57600080fd5b5060556067565b60408051918252519081900360200190f35b604080517f46414b455f4150505f49440000000000000000000000000000000000000000008152905190819003600b019020815600a165627a7a7230582051bbae58f3d625942dfc153d21c9e230be0bed6206de7c3f06163749e73d64880029",
+  "deployedBytecode": "0x608060405260043610603e5763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416630ef7fc6d81146043575b600080fd5b348015604e57600080fd5b5060556067565b60408051918252519081900360200190f35b604080517f46414b455f4150505f49440000000000000000000000000000000000000000008152905190819003600b019020815600a165627a7a7230582051bbae58f3d625942dfc153d21c9e230be0bed6206de7c3f06163749e73d64880029",
+  "sourceMap": "145:97:67:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;145:97:67;;;;;;;",
+  "deployedSourceMap": "145:97:67:-;;;;;;;;;;;;;;;;;;;;;;;177:62;;8:9:-1;5:2;;;30:1;27;20:12;5:2;177:62:67;;;;;;;;;;;;;;;;;;;;;215:24;;;;;;;;;;;;;;;;177:62;:::o",
+  "source": "pragma solidity 0.4.24;\n\nimport \"../../../apps/AppProxyPinned.sol\";\nimport \"../../../kernel/IKernel.sol\";\nimport \"../../../kernel/Kernel.sol\";\n\n\ncontract FakeAppConstants {\n    bytes32 public constant FAKE_APP_ID = keccak256('FAKE_APP_ID');\n}\n\ncontract KernelPinnedStorageMock is Kernel, FakeAppConstants {\n    constructor(address _fakeApp) Kernel(false) public {\n        _setApp(KERNEL_APP_BASES_NAMESPACE, FAKE_APP_ID, _fakeApp);\n    }\n}\n\n\n// Testing this contract is a bit of a pain... we can't overload anything to make the contract check\n// pass in the constructor, so we're forced to initialize this with a mocked Kernel that already\n// sets a contract for the fake app.\ncontract AppProxyPinnedStorageMock is AppProxyPinned, FakeAppConstants {\n    constructor(KernelPinnedStorageMock _mockKernel)\n        AppProxyPinned(IKernel(_mockKernel), FAKE_APP_ID, new bytes(0))\n        public // solium-disable-line visibility-first\n    {\n    }\n\n    function setPinnedCodeExt(address _pinnedCode) public {\n        setPinnedCode(_pinnedCode);\n    }\n\n    function getPinnedCodePosition() public pure returns (bytes32) {\n        return PINNED_CODE_POSITION;\n    }\n\n    function pinnedCodeExt() public view returns (address) {\n        return pinnedCode();\n    }\n}\n",
+  "sourcePath": "/Users/facu/Documents/work/aragon/dev/aragonOS/contracts/test/mocks/apps/AppProxyPinnedStorageMock.sol",
+  "ast": {
+    "absolutePath": "/Users/facu/Documents/work/aragon/dev/aragonOS/contracts/test/mocks/apps/AppProxyPinnedStorageMock.sol",
+    "exportedSymbols": {
+      "AppProxyPinnedStorageMock": [
+        11231
+      ],
+      "FakeAppConstants": [
+        11163
+      ],
+      "KernelPinnedStorageMock": [
+        11183
+      ]
+    },
+    "id": 11232,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 11154,
+        "literals": [
+          "solidity",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:67"
+      },
+      {
+        "absolutePath": "/Users/facu/Documents/work/aragon/dev/aragonOS/contracts/apps/AppProxyPinned.sol",
+        "file": "../../../apps/AppProxyPinned.sol",
+        "id": 11155,
+        "nodeType": "ImportDirective",
+        "scope": 11232,
+        "sourceUnit": 2711,
+        "src": "25:42:67",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/facu/Documents/work/aragon/dev/aragonOS/contracts/kernel/IKernel.sol",
+        "file": "../../../kernel/IKernel.sol",
+        "id": 11156,
+        "nodeType": "ImportDirective",
+        "scope": 11232,
+        "sourceUnit": 5929,
+        "src": "68:37:67",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/facu/Documents/work/aragon/dev/aragonOS/contracts/kernel/Kernel.sol",
+        "file": "../../../kernel/Kernel.sol",
+        "id": 11157,
+        "nodeType": "ImportDirective",
+        "scope": 11232,
+        "sourceUnit": 6421,
+        "src": "106:36:67",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 11163,
+        "linearizedBaseContracts": [
+          11163
+        ],
+        "name": "FakeAppConstants",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": true,
+            "id": 11162,
+            "name": "FAKE_APP_ID",
+            "nodeType": "VariableDeclaration",
+            "scope": 11163,
+            "src": "177:62:67",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes32",
+              "typeString": "bytes32"
+            },
+            "typeName": {
+              "id": 11158,
+              "name": "bytes32",
+              "nodeType": "ElementaryTypeName",
+              "src": "177:7:67",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "arguments": [
+                {
+                  "argumentTypes": null,
+                  "hexValue": "46414b455f4150505f4944",
+                  "id": 11160,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "string",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "225:13:67",
+                  "subdenomination": null,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_stringliteral_94d51605b116368638528b628a03c90025283f38108511c9a9a67def972f2b33",
+                    "typeString": "literal_string \"FAKE_APP_ID\""
+                  },
+                  "value": "FAKE_APP_ID"
+                }
+              ],
+              "expression": {
+                "argumentTypes": [
+                  {
+                    "typeIdentifier": "t_stringliteral_94d51605b116368638528b628a03c90025283f38108511c9a9a67def972f2b33",
+                    "typeString": "literal_string \"FAKE_APP_ID\""
+                  }
+                ],
+                "id": 11159,
+                "name": "keccak256",
+                "nodeType": "Identifier",
+                "overloadedDeclarations": [],
+                "referencedDeclaration": 16427,
+                "src": "215:9:67",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
+                  "typeString": "function () pure returns (bytes32)"
+                }
+              },
+              "id": 11161,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "functionCall",
+              "lValueRequested": false,
+              "names": [],
+              "nodeType": "FunctionCall",
+              "src": "215:24:67",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "visibility": "public"
+          }
+        ],
+        "scope": 11232,
+        "src": "145:97:67"
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 11164,
+              "name": "Kernel",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 6420,
+              "src": "280:6:67",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Kernel_$6420",
+                "typeString": "contract Kernel"
+              }
+            },
+            "id": 11165,
+            "nodeType": "InheritanceSpecifier",
+            "src": "280:6:67"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 11166,
+              "name": "FakeAppConstants",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 11163,
+              "src": "288:16:67",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_FakeAppConstants_$11163",
+                "typeString": "contract FakeAppConstants"
+              }
+            },
+            "id": 11167,
+            "nodeType": "InheritanceSpecifier",
+            "src": "288:16:67"
+          }
+        ],
+        "contractDependencies": [
+          1719,
+          3129,
+          3189,
+          3287,
+          3315,
+          3348,
+          3677,
+          3899,
+          5484,
+          5887,
+          5928,
+          6420,
+          6432,
+          6442,
+          6521,
+          11163
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 11183,
+        "linearizedBaseContracts": [
+          11183,
+          11163,
+          6420,
+          1719,
+          5484,
+          3899,
+          3315,
+          3129,
+          3348,
+          3287,
+          3677,
+          6442,
+          6432,
+          6521,
+          5928,
+          3189,
+          5887
+        ],
+        "name": "KernelPinnedStorageMock",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 11181,
+              "nodeType": "Block",
+              "src": "362:75:67",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 11176,
+                        "name": "KERNEL_APP_BASES_NAMESPACE",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 6438,
+                        "src": "380:26:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 11177,
+                        "name": "FAKE_APP_ID",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11162,
+                        "src": "408:11:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 11178,
+                        "name": "_fakeApp",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11169,
+                        "src": "421:8:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        },
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 11175,
+                      "name": "_setApp",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 6356,
+                      "src": "372:7:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_bytes32_$_t_bytes32_$_t_address_$returns$__$",
+                        "typeString": "function (bytes32,bytes32,address)"
+                      }
+                    },
+                    "id": 11179,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "372:58:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 11180,
+                  "nodeType": "ExpressionStatement",
+                  "src": "372:58:67"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 11182,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "argumentTypes": null,
+                    "hexValue": "66616c7365",
+                    "id": 11172,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "bool",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "348:5:67",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    },
+                    "value": "false"
+                  }
+                ],
+                "id": 11173,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 11171,
+                  "name": "Kernel",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 6420,
+                  "src": "341:6:67",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_contract$_Kernel_$6420_$",
+                    "typeString": "type(contract Kernel)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "341:13:67"
+              }
+            ],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11170,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11169,
+                  "name": "_fakeApp",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11182,
+                  "src": "323:16:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 11168,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "323:7:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "322:18:67"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 11174,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "362:0:67"
+            },
+            "scope": 11183,
+            "src": "311:126:67",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 11232,
+        "src": "244:195:67"
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 11184,
+              "name": "AppProxyPinned",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 2710,
+              "src": "715:14:67",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_AppProxyPinned_$2710",
+                "typeString": "contract AppProxyPinned"
+              }
+            },
+            "id": 11185,
+            "nodeType": "InheritanceSpecifier",
+            "src": "715:14:67"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 11186,
+              "name": "FakeAppConstants",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 11163,
+              "src": "731:16:67",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_FakeAppConstants_$11163",
+                "typeString": "contract FakeAppConstants"
+              }
+            },
+            "id": 11187,
+            "nodeType": "InheritanceSpecifier",
+            "src": "731:16:67"
+          }
+        ],
+        "contractDependencies": [
+          2627,
+          2710,
+          2812,
+          3050,
+          3089,
+          3121,
+          3315,
+          6442,
+          7766,
+          11163
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 11231,
+        "linearizedBaseContracts": [
+          11231,
+          11163,
+          2710,
+          2627,
+          6442,
+          3089,
+          3050,
+          3315,
+          7766,
+          3121,
+          2812
+        ],
+        "name": "AppProxyPinnedStorageMock",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 11202,
+              "nodeType": "Block",
+              "src": "934:7:67",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 11203,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 11193,
+                        "name": "_mockKernel",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11189,
+                        "src": "834:11:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_KernelPinnedStorageMock_$11183",
+                          "typeString": "contract KernelPinnedStorageMock"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_contract$_KernelPinnedStorageMock_$11183",
+                          "typeString": "contract KernelPinnedStorageMock"
+                        }
+                      ],
+                      "id": 11192,
+                      "name": "IKernel",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5928,
+                      "src": "826:7:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_contract$_IKernel_$5928_$",
+                        "typeString": "type(contract IKernel)"
+                      }
+                    },
+                    "id": 11194,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "typeConversion",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "826:20:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IKernel_$5928",
+                      "typeString": "contract IKernel"
+                    }
+                  },
+                  {
+                    "argumentTypes": null,
+                    "id": 11195,
+                    "name": "FAKE_APP_ID",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 11162,
+                    "src": "848:11:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "30",
+                        "id": 11198,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "871:1:67",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
+                        },
+                        "value": "0"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
+                        }
+                      ],
+                      "id": 11197,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "nodeType": "NewExpression",
+                      "src": "861:9:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_objectcreation_pure$_t_uint256_$returns$_t_bytes_memory_$",
+                        "typeString": "function (uint256) pure returns (bytes memory)"
+                      },
+                      "typeName": {
+                        "id": 11196,
+                        "name": "bytes",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "865:5:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes_storage_ptr",
+                          "typeString": "bytes"
+                        }
+                      }
+                    },
+                    "id": 11199,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "861:12:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_memory",
+                      "typeString": "bytes memory"
+                    }
+                  }
+                ],
+                "id": 11200,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 11191,
+                  "name": "AppProxyPinned",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 2710,
+                  "src": "811:14:67",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_contract$_AppProxyPinned_$2710_$",
+                    "typeString": "type(contract AppProxyPinned)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "811:63:67"
+              }
+            ],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11190,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11189,
+                  "name": "_mockKernel",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11203,
+                  "src": "766:35:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_KernelPinnedStorageMock_$11183",
+                    "typeString": "contract KernelPinnedStorageMock"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 11188,
+                    "name": "KernelPinnedStorageMock",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 11183,
+                    "src": "766:23:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_KernelPinnedStorageMock_$11183",
+                      "typeString": "contract KernelPinnedStorageMock"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "765:37:67"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 11201,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "934:0:67"
+            },
+            "scope": 11231,
+            "src": "754:187:67",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 11212,
+              "nodeType": "Block",
+              "src": "1001:43:67",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 11209,
+                        "name": "_pinnedCode",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11205,
+                        "src": "1025:11:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 11208,
+                      "name": "setPinnedCode",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 2699,
+                      "src": "1011:13:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address)"
+                      }
+                    },
+                    "id": 11210,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1011:26:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 11211,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1011:26:67"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 11213,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "setPinnedCodeExt",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11206,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11205,
+                  "name": "_pinnedCode",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11213,
+                  "src": "973:19:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 11204,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "973:7:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "972:21:67"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 11207,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1001:0:67"
+            },
+            "scope": 11231,
+            "src": "947:97:67",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 11220,
+              "nodeType": "Block",
+              "src": "1113:44:67",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 11218,
+                    "name": "PINNED_CODE_POSITION",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 2642,
+                    "src": "1130:20:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "functionReturnParameters": 11217,
+                  "id": 11219,
+                  "nodeType": "Return",
+                  "src": "1123:27:67"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 11221,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getPinnedCodePosition",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11214,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1080:2:67"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 11217,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11216,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11221,
+                  "src": "1104:7:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 11215,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1104:7:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1103:9:67"
+            },
+            "scope": 11231,
+            "src": "1050:107:67",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 11229,
+              "nodeType": "Block",
+              "src": "1218:36:67",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 11226,
+                      "name": "pinnedCode",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 2709,
+                      "src": "1235:10:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$_t_address_$",
+                        "typeString": "function () view returns (address)"
+                      }
+                    },
+                    "id": 11227,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1235:12:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "functionReturnParameters": 11225,
+                  "id": 11228,
+                  "nodeType": "Return",
+                  "src": "1228:19:67"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 11230,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "pinnedCodeExt",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11222,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1185:2:67"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 11225,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11224,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11230,
+                  "src": "1209:7:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 11223,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1209:7:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1208:9:67"
+            },
+            "scope": 11231,
+            "src": "1163:91:67",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 11232,
+        "src": "677:579:67"
+      }
+    ],
+    "src": "0:1257:67"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/facu/Documents/work/aragon/dev/aragonOS/contracts/test/mocks/apps/AppProxyPinnedStorageMock.sol",
+    "exportedSymbols": {
+      "AppProxyPinnedStorageMock": [
+        11231
+      ],
+      "FakeAppConstants": [
+        11163
+      ],
+      "KernelPinnedStorageMock": [
+        11183
+      ]
+    },
+    "id": 11232,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 11154,
+        "literals": [
+          "solidity",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:67"
+      },
+      {
+        "absolutePath": "/Users/facu/Documents/work/aragon/dev/aragonOS/contracts/apps/AppProxyPinned.sol",
+        "file": "../../../apps/AppProxyPinned.sol",
+        "id": 11155,
+        "nodeType": "ImportDirective",
+        "scope": 11232,
+        "sourceUnit": 2711,
+        "src": "25:42:67",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/facu/Documents/work/aragon/dev/aragonOS/contracts/kernel/IKernel.sol",
+        "file": "../../../kernel/IKernel.sol",
+        "id": 11156,
+        "nodeType": "ImportDirective",
+        "scope": 11232,
+        "sourceUnit": 5929,
+        "src": "68:37:67",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "absolutePath": "/Users/facu/Documents/work/aragon/dev/aragonOS/contracts/kernel/Kernel.sol",
+        "file": "../../../kernel/Kernel.sol",
+        "id": 11157,
+        "nodeType": "ImportDirective",
+        "scope": 11232,
+        "sourceUnit": 6421,
+        "src": "106:36:67",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 11163,
+        "linearizedBaseContracts": [
+          11163
+        ],
+        "name": "FakeAppConstants",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": true,
+            "id": 11162,
+            "name": "FAKE_APP_ID",
+            "nodeType": "VariableDeclaration",
+            "scope": 11163,
+            "src": "177:62:67",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes32",
+              "typeString": "bytes32"
+            },
+            "typeName": {
+              "id": 11158,
+              "name": "bytes32",
+              "nodeType": "ElementaryTypeName",
+              "src": "177:7:67",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "arguments": [
+                {
+                  "argumentTypes": null,
+                  "hexValue": "46414b455f4150505f4944",
+                  "id": 11160,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "string",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "225:13:67",
+                  "subdenomination": null,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_stringliteral_94d51605b116368638528b628a03c90025283f38108511c9a9a67def972f2b33",
+                    "typeString": "literal_string \"FAKE_APP_ID\""
+                  },
+                  "value": "FAKE_APP_ID"
+                }
+              ],
+              "expression": {
+                "argumentTypes": [
+                  {
+                    "typeIdentifier": "t_stringliteral_94d51605b116368638528b628a03c90025283f38108511c9a9a67def972f2b33",
+                    "typeString": "literal_string \"FAKE_APP_ID\""
+                  }
+                ],
+                "id": 11159,
+                "name": "keccak256",
+                "nodeType": "Identifier",
+                "overloadedDeclarations": [],
+                "referencedDeclaration": 16427,
+                "src": "215:9:67",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
+                  "typeString": "function () pure returns (bytes32)"
+                }
+              },
+              "id": 11161,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "functionCall",
+              "lValueRequested": false,
+              "names": [],
+              "nodeType": "FunctionCall",
+              "src": "215:24:67",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "visibility": "public"
+          }
+        ],
+        "scope": 11232,
+        "src": "145:97:67"
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 11164,
+              "name": "Kernel",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 6420,
+              "src": "280:6:67",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_Kernel_$6420",
+                "typeString": "contract Kernel"
+              }
+            },
+            "id": 11165,
+            "nodeType": "InheritanceSpecifier",
+            "src": "280:6:67"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 11166,
+              "name": "FakeAppConstants",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 11163,
+              "src": "288:16:67",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_FakeAppConstants_$11163",
+                "typeString": "contract FakeAppConstants"
+              }
+            },
+            "id": 11167,
+            "nodeType": "InheritanceSpecifier",
+            "src": "288:16:67"
+          }
+        ],
+        "contractDependencies": [
+          1719,
+          3129,
+          3189,
+          3287,
+          3315,
+          3348,
+          3677,
+          3899,
+          5484,
+          5887,
+          5928,
+          6420,
+          6432,
+          6442,
+          6521,
+          11163
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 11183,
+        "linearizedBaseContracts": [
+          11183,
+          11163,
+          6420,
+          1719,
+          5484,
+          3899,
+          3315,
+          3129,
+          3348,
+          3287,
+          3677,
+          6442,
+          6432,
+          6521,
+          5928,
+          3189,
+          5887
+        ],
+        "name": "KernelPinnedStorageMock",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 11181,
+              "nodeType": "Block",
+              "src": "362:75:67",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 11176,
+                        "name": "KERNEL_APP_BASES_NAMESPACE",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 6438,
+                        "src": "380:26:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 11177,
+                        "name": "FAKE_APP_ID",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11162,
+                        "src": "408:11:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        }
+                      },
+                      {
+                        "argumentTypes": null,
+                        "id": 11178,
+                        "name": "_fakeApp",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11169,
+                        "src": "421:8:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        },
+                        {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
+                        },
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 11175,
+                      "name": "_setApp",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 6356,
+                      "src": "372:7:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_bytes32_$_t_bytes32_$_t_address_$returns$__$",
+                        "typeString": "function (bytes32,bytes32,address)"
+                      }
+                    },
+                    "id": 11179,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "372:58:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 11180,
+                  "nodeType": "ExpressionStatement",
+                  "src": "372:58:67"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 11182,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "argumentTypes": null,
+                    "hexValue": "66616c7365",
+                    "id": 11172,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "bool",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "348:5:67",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    },
+                    "value": "false"
+                  }
+                ],
+                "id": 11173,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 11171,
+                  "name": "Kernel",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 6420,
+                  "src": "341:6:67",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_contract$_Kernel_$6420_$",
+                    "typeString": "type(contract Kernel)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "341:13:67"
+              }
+            ],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11170,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11169,
+                  "name": "_fakeApp",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11182,
+                  "src": "323:16:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 11168,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "323:7:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "322:18:67"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 11174,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "362:0:67"
+            },
+            "scope": 11183,
+            "src": "311:126:67",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 11232,
+        "src": "244:195:67"
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 11184,
+              "name": "AppProxyPinned",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 2710,
+              "src": "715:14:67",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_AppProxyPinned_$2710",
+                "typeString": "contract AppProxyPinned"
+              }
+            },
+            "id": 11185,
+            "nodeType": "InheritanceSpecifier",
+            "src": "715:14:67"
+          },
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 11186,
+              "name": "FakeAppConstants",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 11163,
+              "src": "731:16:67",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_FakeAppConstants_$11163",
+                "typeString": "contract FakeAppConstants"
+              }
+            },
+            "id": 11187,
+            "nodeType": "InheritanceSpecifier",
+            "src": "731:16:67"
+          }
+        ],
+        "contractDependencies": [
+          2627,
+          2710,
+          2812,
+          3050,
+          3089,
+          3121,
+          3315,
+          6442,
+          7766,
+          11163
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 11231,
+        "linearizedBaseContracts": [
+          11231,
+          11163,
+          2710,
+          2627,
+          6442,
+          3089,
+          3050,
+          3315,
+          7766,
+          3121,
+          2812
+        ],
+        "name": "AppProxyPinnedStorageMock",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 11202,
+              "nodeType": "Block",
+              "src": "934:7:67",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 11203,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [
+              {
+                "arguments": [
+                  {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 11193,
+                        "name": "_mockKernel",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11189,
+                        "src": "834:11:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_KernelPinnedStorageMock_$11183",
+                          "typeString": "contract KernelPinnedStorageMock"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_contract$_KernelPinnedStorageMock_$11183",
+                          "typeString": "contract KernelPinnedStorageMock"
+                        }
+                      ],
+                      "id": 11192,
+                      "name": "IKernel",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 5928,
+                      "src": "826:7:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_contract$_IKernel_$5928_$",
+                        "typeString": "type(contract IKernel)"
+                      }
+                    },
+                    "id": 11194,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "typeConversion",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "826:20:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IKernel_$5928",
+                      "typeString": "contract IKernel"
+                    }
+                  },
+                  {
+                    "argumentTypes": null,
+                    "id": 11195,
+                    "name": "FAKE_APP_ID",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 11162,
+                    "src": "848:11:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "hexValue": "30",
+                        "id": 11198,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "871:1:67",
+                        "subdenomination": null,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
+                        },
+                        "value": "0"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
+                        }
+                      ],
+                      "id": 11197,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "nodeType": "NewExpression",
+                      "src": "861:9:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_objectcreation_pure$_t_uint256_$returns$_t_bytes_memory_$",
+                        "typeString": "function (uint256) pure returns (bytes memory)"
+                      },
+                      "typeName": {
+                        "id": 11196,
+                        "name": "bytes",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "865:5:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes_storage_ptr",
+                          "typeString": "bytes"
+                        }
+                      }
+                    },
+                    "id": 11199,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "861:12:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes_memory",
+                      "typeString": "bytes memory"
+                    }
+                  }
+                ],
+                "id": 11200,
+                "modifierName": {
+                  "argumentTypes": null,
+                  "id": 11191,
+                  "name": "AppProxyPinned",
+                  "nodeType": "Identifier",
+                  "overloadedDeclarations": [],
+                  "referencedDeclaration": 2710,
+                  "src": "811:14:67",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_type$_t_contract$_AppProxyPinned_$2710_$",
+                    "typeString": "type(contract AppProxyPinned)"
+                  }
+                },
+                "nodeType": "ModifierInvocation",
+                "src": "811:63:67"
+              }
+            ],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11190,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11189,
+                  "name": "_mockKernel",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11203,
+                  "src": "766:35:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_KernelPinnedStorageMock_$11183",
+                    "typeString": "contract KernelPinnedStorageMock"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 11188,
+                    "name": "KernelPinnedStorageMock",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 11183,
+                    "src": "766:23:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_KernelPinnedStorageMock_$11183",
+                      "typeString": "contract KernelPinnedStorageMock"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "765:37:67"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 11201,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "934:0:67"
+            },
+            "scope": 11231,
+            "src": "754:187:67",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 11212,
+              "nodeType": "Block",
+              "src": "1001:43:67",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 11209,
+                        "name": "_pinnedCode",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 11205,
+                        "src": "1025:11:67",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      ],
+                      "id": 11208,
+                      "name": "setPinnedCode",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 2699,
+                      "src": "1011:13:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$returns$__$",
+                        "typeString": "function (address)"
+                      }
+                    },
+                    "id": 11210,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1011:26:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 11211,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1011:26:67"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 11213,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "setPinnedCodeExt",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11206,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11205,
+                  "name": "_pinnedCode",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11213,
+                  "src": "973:19:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 11204,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "973:7:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "972:21:67"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 11207,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1001:0:67"
+            },
+            "scope": 11231,
+            "src": "947:97:67",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 11220,
+              "nodeType": "Block",
+              "src": "1113:44:67",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 11218,
+                    "name": "PINNED_CODE_POSITION",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 2642,
+                    "src": "1130:20:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "functionReturnParameters": 11217,
+                  "id": 11219,
+                  "nodeType": "Return",
+                  "src": "1123:27:67"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 11221,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getPinnedCodePosition",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11214,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1080:2:67"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 11217,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11216,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11221,
+                  "src": "1104:7:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bytes32",
+                    "typeString": "bytes32"
+                  },
+                  "typeName": {
+                    "id": 11215,
+                    "name": "bytes32",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1104:7:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bytes32",
+                      "typeString": "bytes32"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1103:9:67"
+            },
+            "scope": 11231,
+            "src": "1050:107:67",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 11229,
+              "nodeType": "Block",
+              "src": "1218:36:67",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 11226,
+                      "name": "pinnedCode",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 2709,
+                      "src": "1235:10:67",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$_t_address_$",
+                        "typeString": "function () view returns (address)"
+                      }
+                    },
+                    "id": 11227,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1235:12:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "functionReturnParameters": 11225,
+                  "id": 11228,
+                  "nodeType": "Return",
+                  "src": "1228:19:67"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 11230,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "pinnedCodeExt",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 11222,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1185:2:67"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 11225,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 11224,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 11230,
+                  "src": "1209:7:67",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 11223,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1209:7:67",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1208:9:67"
+            },
+            "scope": 11231,
+            "src": "1163:91:67",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 11232,
+        "src": "677:579:67"
+      }
+    ],
+    "src": "0:1257:67"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2019-09-03T15:25:09.538Z"
+}
