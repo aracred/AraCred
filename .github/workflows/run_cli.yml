@@ -16,24 +16,20 @@ jobs:
         uses: "actions/setup-node@v1"
         with:
           node-version: "${{ matrix.node-version }}"
-          GPG_KEY: "${{ secrets.GPG_KEY }}"
-      - name: Decrypt secret keys
-        run: ./decrypt_secret.sh
+          INFURA_KEY: "${{ secrets.INFURA_KEY }}"
+          PRIVATE_KEY: "${{ secrets.PRIVATE_KEY }}"
+      - name: Setup aragonCLI signer
+        run: node ./src/setupAragon.js
         env:
-          GPG_KEY: ${{ secrets.GPG_KEY }}
+          INFURA_KEY: "${{ secrets.INFURA_KEY }}"
+          PRIVATE_KEY: "${{ secrets.PRIVATE_KEY }}"
       - name: Install Aracred
         run: npm ci
       - name: Install Aragon
         run: npm install -g @aragon/cli
-      - name: Decrypt keys
-        run: ./decrypt_secret.sh
-        env:
-          GPG_KEY: ${{ secrets.GPG_KEY }}
-      - name: Creating web3 provider config
-        run: npm run secrets
       - name: Prepare transaction
-        run: npm run prepTX
-      - name: SourceCred Grain
-        run: cat transactionSettings.json
+        run: node ./src/processGrain.js
+      - name: Echo Transaction Settings
+        run: cat ./log/transactionSettings.json
       - name: Sending Transaction
         run: node ./src/mint.js | sh
