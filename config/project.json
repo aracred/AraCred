@@ -1,0 +1,50 @@
+[
+  {
+    "type": "sourcecred/project",
+    "version": "0.4.0"
+  },
+  {
+    "id": "@AraCred",
+    "discord": {
+      "guildId": "695344751490236486",
+      "reactionWeights": {
+        "👍": 1,
+        "🔥": 1,
+        "❤️": 1,
+        "💯": 1,
+        "🙏": 1
+      }
+    },
+    "discourseServer": {
+      "serverUrl": "https://discourse.sourcecred.io"
+    },
+    "identities": [
+      {
+        "username": "burrrata",
+        "aliases": [
+          "github/burrrata",
+          "discord/657069807505637397",
+          "discourse/burrrata"
+        ]
+      },
+      {
+        "username": "Aaron",
+        "aliases": [
+          "github/pythonpete32",
+          "discord/571023281382227978",
+          "discourse/aaron"
+        ]
+      }
+    ],
+    "repoIds": [
+      {
+        "name": "AraCred",
+        "owner": "aracred"
+      },
+      {
+        "name": "website",
+        "owner": "aracred"
+      }
+    ]
+  }
+]
