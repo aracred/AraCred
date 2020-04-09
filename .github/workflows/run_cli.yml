@@ -16,24 +16,9 @@ jobs:
      uses: 'actions/setup-node@v1'
      with:
       node-version: '${{ matrix.node-version }}'
-      GPG_KEY: '${{ secrets.GPG_KEY }}'
-   - name: Decrypt secret keys
-     run: ./decrypt_secret.sh
+      TEST: '${{ secrets.TEST }}'
+
+   - name: Setup aragonCLI signer
+     run: node ./src/setupAragon.js
      env:
-      GPG_KEY: ${{ secrets.GPG_KEY }}
-   - name: Install Aracred
-     run: npm ci
-   - name: Install Aragon
-     run: npm install -g @aragon/cli
-   - name: Decrypt keys
-     run: ./decrypt_secret.sh
-     env:
-      GPG_KEY: ${{ secrets.GPG_KEY }}
-   - name: Creating web3 provider config
-     run: npm run secrets
-   - name: Prepare transaction
-     run: npm run prepTX
-   - name: SourceCred Grain
-     run: cat transactionSettings.json
-   - name: Sending Transaction
-     run: node ./src/mint.js | sh
+      TEST: ${{ secrets.TEST }}

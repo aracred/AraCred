@@ -44,6 +44,6 @@ const saveFile = () => {
 		process.exit(-1);
 	}
 };
-
+console.log(`test env: ${process.env.TEST}`);
 saveFile();
 module.export = {fileContent, saveFile};
