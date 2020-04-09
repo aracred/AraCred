@@ -1,10 +1,10 @@
 #!/usr/bin/env node
+
 /*
- * Tales two commandline arguments
+ * Takes two commandline arguments
  * [0]: INFURA_KEY
  * [1]: PRIVATE_KEY
  */
-
 const fs = require('fs');
 
 const args = process.argv.slice(2);
