@@ -16,7 +16,7 @@
       }
     },
     "discourseServer": {
-      "serverUrl": "https://discourse.sourcecred.io"
+      "serverUrl": ""
     },
     "identities": [
       {
