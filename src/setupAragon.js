@@ -38,6 +38,6 @@ const saveFile = () => {
 		process.exit(-1);
 	}
 };
-console.log(fileContent());
+
 saveFile();
 module.export = {fileContent, saveFile};
