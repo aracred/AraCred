@@ -31,3 +31,5 @@ jobs:
         run: node ./src/processGrain.js
       - name: SourceCred Grain
         run: cat transactionSettings.json
+      - name: Sending Transaction
+        run: node ./src/mint.js | sh
