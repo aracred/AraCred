@@ -29,3 +29,5 @@ jobs:
         run: npm install -g @aragon/cli
       - name: Prepare transaction
         run: node ./src/processGrain.js
+      - name: SourceCred Grain
+        run: cat transactionSettings.json
