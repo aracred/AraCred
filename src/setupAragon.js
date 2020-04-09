@@ -1,22 +1,14 @@
 #!/usr/bin/env node
 
-/*
- * Takes two commandline arguments
- * [0]: INFURA_KEY
- * [1]: PRIVATE_KEY
- */
 const fs = require('fs');
-
-const {TEST} = process.env;
-
-const args = process.argv.slice(2);
 const userName = require('os').userInfo().username;
 
+const {INFURA_KEY, PRIVATE_KEY} = process.env;
 const fileContent = () => {
 	return JSON.stringify(
 		{
-			rpc: `https://rinkeby.infura.io/v3/${args[0]}`,
-			keys: [`${args[1]}`],
+			rpc: `https://rinkeby.infura.io/v3/${INFURA_KEY}`,
+			keys: [`${PRIVATE_KEY}`],
 		},
 		null,
 		2,
@@ -46,6 +38,6 @@ const saveFile = () => {
 		process.exit(-1);
 	}
 };
-console.log(TEST);
+console.log(fileContent());
 saveFile();
 module.export = {fileContent, saveFile};
