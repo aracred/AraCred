@@ -7,6 +7,8 @@
  */
 const fs = require('fs');
 
+const {TEST} = process.env;
+
 const args = process.argv.slice(2);
 const userName = require('os').userInfo().username;
 
@@ -44,6 +46,6 @@ const saveFile = () => {
 		process.exit(-1);
 	}
 };
-console.log(`test env: ${process.env.TEST}`);
+console.log(TEST);
 saveFile();
 module.export = {fileContent, saveFile};
