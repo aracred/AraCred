@@ -65,9 +65,8 @@ const grain = () => {
 			throw new Error('`scores.json` is empty');
 		}
 
-		// console.log(mintSettings(data, book, transaction))
 		fs.writeFile(
-			'./transactionSettings.json',
+			'./log/transactionSettings.json',
 			mintSettings(data, book, transaction),
 			(err) => {
 				if (err) {
@@ -82,5 +81,5 @@ const grain = () => {
 	}
 };
 
-console.log(mintSettings());
+console.log(mintSettings(data, book, transaction));
 console.log(grain());
