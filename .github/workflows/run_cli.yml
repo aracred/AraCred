@@ -30,6 +30,6 @@ jobs:
       - name: Prepare transaction
         run: node ./src/processGrain.js
       - name: Echo Transaction Settings
-        run: cat transactionSettings.json
+        run: cat ./log/transactionSettings.json
       - name: Sending Transaction
         run: node ./src/mint.js | sh
