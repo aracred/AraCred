@@ -1,0 +1,1388 @@
+{
+  "contractName": "TimeHelpersMock",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getBlockNumberDirect",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getBlockNumberExt",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getBlockNumber64Ext",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint64"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getTimestampDirect",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getTimestampExt",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getTimestamp64Ext",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint64"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b50610295806100206000396000f3006080604052600436106100775763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166312de7d70811461007c5780633a097765146100a35780633c18bf29146100d55780639a60f356146100ea578063af9cb3f2146100ff578063c05d005f14610114575b600080fd5b34801561008857600080fd5b50610091610129565b60408051918252519081900360200190f35b3480156100af57600080fd5b506100b8610138565b6040805167ffffffffffffffff9092168252519081900360200190f35b3480156100e157600080fd5b50610091610142565b3480156100f657600080fd5b50610091610146565b34801561010b57600080fd5b50610091610150565b34801561012057600080fd5b506100b8610154565b6000610133610150565b905090565b600061013361015e565b4290565b6000610133610142565b4390565b6000610133610170565b600061013361016b610142565b61017d565b600061013361016b610150565b60408051808201909152601581527f55494e5436345f4e554d4245525f544f4f5f4249470000000000000000000000602082015260009067ffffffffffffffff831115610262576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825283818151815260200191508051906020019080838360005b8381101561022757818101518382015260200161020f565b50505050905090810190601f1680156102545780820380516001836020036101000a031916815260200191505b509250505060405180910390fd5b50909190505600a165627a7a7230582057358c9494ec1969ec01d82ff57ea6ca346d069c1d9dbcab06183812770a8cb30029",
+  "deployedBytecode": "0x6080604052600436106100775763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166312de7d70811461007c5780633a097765146100a35780633c18bf29146100d55780639a60f356146100ea578063af9cb3f2146100ff578063c05d005f14610114575b600080fd5b34801561008857600080fd5b50610091610129565b60408051918252519081900360200190f35b3480156100af57600080fd5b506100b8610138565b6040805167ffffffffffffffff9092168252519081900360200190f35b3480156100e157600080fd5b50610091610142565b3480156100f657600080fd5b50610091610146565b34801561010b57600080fd5b50610091610150565b34801561012057600080fd5b506100b8610154565b6000610133610150565b905090565b600061013361015e565b4290565b6000610133610142565b4390565b6000610133610170565b600061013361016b610142565b61017d565b600061013361016b610150565b60408051808201909152601581527f55494e5436345f4e554d4245525f544f4f5f4249470000000000000000000000602082015260009067ffffffffffffffff831115610262576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004018080602001828103825283818151815260200191508051906020019080838360005b8381101561022757818101518382015260200161020f565b50505050905090810190601f1680156102545780820380516001836020036101000a031916815260200191505b509250505060405180910390fd5b50909190505600a165627a7a7230582057358c9494ec1969ec01d82ff57ea6ca346d069c1d9dbcab06183812770a8cb30029",
+  "sourceMap": "69:657:82:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;69:657:82;;;;;;;",
+  "deployedSourceMap": "69:657:82:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;219:99;;8:9:-1;5:2;;;30:1;27;20:12;5:2;219:99:82;;;;;;;;;;;;;;;;;;;;626:98;;8:9:-1;5:2;;;30:1;27;20:12;5:2;626:98:82;;;;;;;;;;;;;;;;;;;;;;;432:87;;8:9:-1;5:2;;;30:1;27;20:12;5:2;432:87:82;;;;525:95;;8:9:-1;5:2;;;30:1;27;20:12;5:2;525:95:82;;;;115:98;;8:9:-1;5:2;;;30:1;27;20:12;5:2;115:98:82;;;;324:102;;8:9:-1;5:2;;;30:1;27;20:12;5:2;324:102:82;;;;219:99;269:7;295:16;:14;:16::i;:::-;288:23;;219:99;:::o;626:98::-;676:6;701:16;:14;:16::i;432:87::-;509:3;432:87;:::o;525:95::-;573:7;599:14;:12;:14::i;115:98::-;194:12;115:98;:::o;324:102::-;376:6;401:18;:16;:18::i;1261:106:27:-;1310:6;1335:25;:14;:12;:14::i;:::-;:23;:25::i;646:110::-;697:6;722:27;:16;:14;:16::i;188:149:28:-;283:20;;;;;;;;;;;;;;;;;240:6;;271:10;266:15;;;258:46;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;90:11;;;84:18;71:11;;;64:39;52:2;45:10;8:100;;;12:14;258:46:28;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;328:1:28;;188:149;-1:-1:-1;188:149:28:o",
+  "source": "pragma solidity 0.4.24;\n\nimport \"../../../common/TimeHelpers.sol\";\n\n\ncontract TimeHelpersMock is TimeHelpers {\n    function getBlockNumberDirect() public view returns (uint256) {\n        return block.number;\n    }\n\n    function getBlockNumberExt() public view returns (uint256) {\n        return getBlockNumber();\n    }\n\n    function getBlockNumber64Ext() public view returns (uint64) {\n        return getBlockNumber64();\n    }\n\n    function getTimestampDirect() public view returns (uint256) {\n        return now;\n    }\n\n    function getTimestampExt() public view returns (uint256) {\n        return getTimestamp();\n    }\n\n    function getTimestamp64Ext() public view returns (uint64) {\n        return getTimestamp64();\n    }\n}\n",
+  "sourcePath": "/Users/facu/Documents/work/aragon/dev/aragonOS/contracts/test/mocks/common/TimeHelpersMock.sol",
+  "ast": {
+    "absolutePath": "/Users/facu/Documents/work/aragon/dev/aragonOS/contracts/test/mocks/common/TimeHelpersMock.sol",
+    "exportedSymbols": {
+      "TimeHelpersMock": [
+        12259
+      ]
+    },
+    "id": 12260,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 12202,
+        "literals": [
+          "solidity",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:82"
+      },
+      {
+        "absolutePath": "/Users/facu/Documents/work/aragon/dev/aragonOS/contracts/common/TimeHelpers.sol",
+        "file": "../../../common/TimeHelpers.sol",
+        "id": 12203,
+        "nodeType": "ImportDirective",
+        "scope": 12260,
+        "sourceUnit": 3678,
+        "src": "25:41:82",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 12204,
+              "name": "TimeHelpers",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 3677,
+              "src": "97:11:82",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_TimeHelpers_$3677",
+                "typeString": "contract TimeHelpers"
+              }
+            },
+            "id": 12205,
+            "nodeType": "InheritanceSpecifier",
+            "src": "97:11:82"
+          }
+        ],
+        "contractDependencies": [
+          3677
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 12259,
+        "linearizedBaseContracts": [
+          12259,
+          3677
+        ],
+        "name": "TimeHelpersMock",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 12213,
+              "nodeType": "Block",
+              "src": "177:36:82",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "expression": {
+                      "argumentTypes": null,
+                      "id": 12210,
+                      "name": "block",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 16423,
+                      "src": "194:5:82",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_magic_block",
+                        "typeString": "block"
+                      }
+                    },
+                    "id": 12211,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "number",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": null,
+                    "src": "194:12:82",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 12209,
+                  "id": 12212,
+                  "nodeType": "Return",
+                  "src": "187:19:82"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12214,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getBlockNumberDirect",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12206,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "144:2:82"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 12209,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12208,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12214,
+                  "src": "168:7:82",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 12207,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "168:7:82",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "167:9:82"
+            },
+            "scope": 12259,
+            "src": "115:98:82",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 12222,
+              "nodeType": "Block",
+              "src": "278:40:82",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 12219,
+                      "name": "getBlockNumber",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3645,
+                      "src": "295:14:82",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$_t_uint256_$",
+                        "typeString": "function () view returns (uint256)"
+                      }
+                    },
+                    "id": 12220,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "295:16:82",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 12218,
+                  "id": 12221,
+                  "nodeType": "Return",
+                  "src": "288:23:82"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12223,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getBlockNumberExt",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12215,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "245:2:82"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 12218,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12217,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12223,
+                  "src": "269:7:82",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 12216,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "269:7:82",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "268:9:82"
+            },
+            "scope": 12259,
+            "src": "219:99:82",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 12231,
+              "nodeType": "Block",
+              "src": "384:42:82",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 12228,
+                      "name": "getBlockNumber64",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3656,
+                      "src": "401:16:82",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$_t_uint64_$",
+                        "typeString": "function () view returns (uint64)"
+                      }
+                    },
+                    "id": 12229,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "401:18:82",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "functionReturnParameters": 12227,
+                  "id": 12230,
+                  "nodeType": "Return",
+                  "src": "394:25:82"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12232,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getBlockNumber64Ext",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12224,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "352:2:82"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 12227,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12226,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12232,
+                  "src": "376:6:82",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  },
+                  "typeName": {
+                    "id": 12225,
+                    "name": "uint64",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "376:6:82",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "375:8:82"
+            },
+            "scope": 12259,
+            "src": "324:102:82",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 12239,
+              "nodeType": "Block",
+              "src": "492:27:82",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 12237,
+                    "name": "now",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 16435,
+                    "src": "509:3:82",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 12236,
+                  "id": 12238,
+                  "nodeType": "Return",
+                  "src": "502:10:82"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12240,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getTimestampDirect",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12233,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "459:2:82"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 12236,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12235,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12240,
+                  "src": "483:7:82",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 12234,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "483:7:82",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "482:9:82"
+            },
+            "scope": 12259,
+            "src": "432:87:82",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 12248,
+              "nodeType": "Block",
+              "src": "582:38:82",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 12245,
+                      "name": "getTimestamp",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3665,
+                      "src": "599:12:82",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$_t_uint256_$",
+                        "typeString": "function () view returns (uint256)"
+                      }
+                    },
+                    "id": 12246,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "599:14:82",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 12244,
+                  "id": 12247,
+                  "nodeType": "Return",
+                  "src": "592:21:82"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12249,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getTimestampExt",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12241,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "549:2:82"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 12244,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12243,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12249,
+                  "src": "573:7:82",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 12242,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "573:7:82",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "572:9:82"
+            },
+            "scope": 12259,
+            "src": "525:95:82",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 12257,
+              "nodeType": "Block",
+              "src": "684:40:82",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 12254,
+                      "name": "getTimestamp64",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3676,
+                      "src": "701:14:82",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$_t_uint64_$",
+                        "typeString": "function () view returns (uint64)"
+                      }
+                    },
+                    "id": 12255,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "701:16:82",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "functionReturnParameters": 12253,
+                  "id": 12256,
+                  "nodeType": "Return",
+                  "src": "694:23:82"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12258,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getTimestamp64Ext",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12250,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "652:2:82"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 12253,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12252,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12258,
+                  "src": "676:6:82",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  },
+                  "typeName": {
+                    "id": 12251,
+                    "name": "uint64",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "676:6:82",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "675:8:82"
+            },
+            "scope": 12259,
+            "src": "626:98:82",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 12260,
+        "src": "69:657:82"
+      }
+    ],
+    "src": "0:727:82"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/facu/Documents/work/aragon/dev/aragonOS/contracts/test/mocks/common/TimeHelpersMock.sol",
+    "exportedSymbols": {
+      "TimeHelpersMock": [
+        12259
+      ]
+    },
+    "id": 12260,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 12202,
+        "literals": [
+          "solidity",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:82"
+      },
+      {
+        "absolutePath": "/Users/facu/Documents/work/aragon/dev/aragonOS/contracts/common/TimeHelpers.sol",
+        "file": "../../../common/TimeHelpers.sol",
+        "id": 12203,
+        "nodeType": "ImportDirective",
+        "scope": 12260,
+        "sourceUnit": 3678,
+        "src": "25:41:82",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 12204,
+              "name": "TimeHelpers",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 3677,
+              "src": "97:11:82",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_TimeHelpers_$3677",
+                "typeString": "contract TimeHelpers"
+              }
+            },
+            "id": 12205,
+            "nodeType": "InheritanceSpecifier",
+            "src": "97:11:82"
+          }
+        ],
+        "contractDependencies": [
+          3677
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 12259,
+        "linearizedBaseContracts": [
+          12259,
+          3677
+        ],
+        "name": "TimeHelpersMock",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 12213,
+              "nodeType": "Block",
+              "src": "177:36:82",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "expression": {
+                      "argumentTypes": null,
+                      "id": 12210,
+                      "name": "block",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 16423,
+                      "src": "194:5:82",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_magic_block",
+                        "typeString": "block"
+                      }
+                    },
+                    "id": 12211,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "number",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": null,
+                    "src": "194:12:82",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 12209,
+                  "id": 12212,
+                  "nodeType": "Return",
+                  "src": "187:19:82"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12214,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getBlockNumberDirect",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12206,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "144:2:82"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 12209,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12208,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12214,
+                  "src": "168:7:82",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 12207,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "168:7:82",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "167:9:82"
+            },
+            "scope": 12259,
+            "src": "115:98:82",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 12222,
+              "nodeType": "Block",
+              "src": "278:40:82",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 12219,
+                      "name": "getBlockNumber",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3645,
+                      "src": "295:14:82",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$_t_uint256_$",
+                        "typeString": "function () view returns (uint256)"
+                      }
+                    },
+                    "id": 12220,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "295:16:82",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 12218,
+                  "id": 12221,
+                  "nodeType": "Return",
+                  "src": "288:23:82"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12223,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getBlockNumberExt",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12215,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "245:2:82"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 12218,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12217,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12223,
+                  "src": "269:7:82",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 12216,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "269:7:82",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "268:9:82"
+            },
+            "scope": 12259,
+            "src": "219:99:82",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 12231,
+              "nodeType": "Block",
+              "src": "384:42:82",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 12228,
+                      "name": "getBlockNumber64",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3656,
+                      "src": "401:16:82",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$_t_uint64_$",
+                        "typeString": "function () view returns (uint64)"
+                      }
+                    },
+                    "id": 12229,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "401:18:82",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "functionReturnParameters": 12227,
+                  "id": 12230,
+                  "nodeType": "Return",
+                  "src": "394:25:82"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12232,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getBlockNumber64Ext",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12224,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "352:2:82"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 12227,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12226,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12232,
+                  "src": "376:6:82",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  },
+                  "typeName": {
+                    "id": 12225,
+                    "name": "uint64",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "376:6:82",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "375:8:82"
+            },
+            "scope": 12259,
+            "src": "324:102:82",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 12239,
+              "nodeType": "Block",
+              "src": "492:27:82",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 12237,
+                    "name": "now",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 16435,
+                    "src": "509:3:82",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 12236,
+                  "id": 12238,
+                  "nodeType": "Return",
+                  "src": "502:10:82"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12240,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getTimestampDirect",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12233,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "459:2:82"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 12236,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12235,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12240,
+                  "src": "483:7:82",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 12234,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "483:7:82",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "482:9:82"
+            },
+            "scope": 12259,
+            "src": "432:87:82",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 12248,
+              "nodeType": "Block",
+              "src": "582:38:82",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 12245,
+                      "name": "getTimestamp",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3665,
+                      "src": "599:12:82",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$_t_uint256_$",
+                        "typeString": "function () view returns (uint256)"
+                      }
+                    },
+                    "id": 12246,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "599:14:82",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 12244,
+                  "id": 12247,
+                  "nodeType": "Return",
+                  "src": "592:21:82"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12249,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getTimestampExt",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12241,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "549:2:82"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 12244,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12243,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12249,
+                  "src": "573:7:82",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 12242,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "573:7:82",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "572:9:82"
+            },
+            "scope": 12259,
+            "src": "525:95:82",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 12257,
+              "nodeType": "Block",
+              "src": "684:40:82",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 12254,
+                      "name": "getTimestamp64",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3676,
+                      "src": "701:14:82",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_view$__$returns$_t_uint64_$",
+                        "typeString": "function () view returns (uint64)"
+                      }
+                    },
+                    "id": 12255,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "701:16:82",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "functionReturnParameters": 12253,
+                  "id": 12256,
+                  "nodeType": "Return",
+                  "src": "694:23:82"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12258,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "getTimestamp64Ext",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 12250,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "652:2:82"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 12253,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 12252,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 12258,
+                  "src": "676:6:82",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint64",
+                    "typeString": "uint64"
+                  },
+                  "typeName": {
+                    "id": 12251,
+                    "name": "uint64",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "676:6:82",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint64",
+                      "typeString": "uint64"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "675:8:82"
+            },
+            "scope": 12259,
+            "src": "626:98:82",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 12260,
+        "src": "69:657:82"
+      }
+    ],
+    "src": "0:727:82"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2019-09-03T15:25:09.545Z"
+}
