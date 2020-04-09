@@ -8,7 +8,7 @@ const {
 	mints,
 	burns,
 	environment,
-} = require('../log/transactionSettings.json');
+} = require('../log/transactionSettings.json')[0];
 
 async function main() {
 	// Encode a bunch of token mints and burns.
