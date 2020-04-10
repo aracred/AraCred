@@ -1,7 +1,7 @@
 ![Run aragonCLI](https://github.com/aracred/AraCred/workflows/Run%20aragonCLI/badge.svg)
 ![Run SourceCred](https://github.com/aracred/AraCred/workflows/Run%20SourceCred/badge.svg)
 
-# Aracred-actions
+# Aracred
 
 > **_WARNING:_** _DO NOT USE THS ON MAINNET_, yet
 
@@ -13,7 +13,7 @@ mint them as tokens in an Aragon DAO
 ### 1. clone repo
 
 ```sh
-git clone https://github.com/aracred/AraCred.git && cd aracred-actions
+git clone https://github.com/aracred/AraCred.git && cd aracred
 ```
 
 ### 2. configure DAO
