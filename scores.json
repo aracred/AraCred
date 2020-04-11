@@ -1,128 +1,96 @@
 [
-    {
-        "type": "sourcecred/cli/scores",
-        "version": "0.2.0"
-    },
-    {
-        "intervals": [
-            {
-                "endTimeMs": 1586044800000,
-                "startTimeMs": 1585440000000
-            },
-            {
-                "endTimeMs": 1586649600000,
-                "startTimeMs": 1586044800000
-            }
-        ],
-        "users": [
-            {
-                "address": [
-                    "sourcecred",
-                    "identity",
-                    "Aaron"
-                ],
-                "intervalCred": [
-                    2,
-                    179.16831933246317
-                ],
-                "totalCred": 181.16831933246317
-            },
-            {
-                "address": [
-                    "sourcecred",
-                    "identity",
-                    "burrrata"
-                ],
-                "intervalCred": [
-                    0,
-                    40.88683017529472
-                ],
-                "totalCred": 40.88683017529472
-            },
-            {
-                "address": [
-                    "sourcecred",
-                    "discord",
-                    "MEMBER",
-                    "user",
-                    "440281764204642314"
-                ],
-                "intervalCred": [
-                    0,
-                    0.9219408181200885
-                ],
-                "totalCred": 0.9219408181200885
-            },
-            {
-                "address": [
-                    "sourcecred",
-                    "discord",
-                    "MEMBER",
-                    "user",
-                    "683892894767251489"
-                ],
-                "intervalCred": [
-                    0,
-                    0.6145205590025852
-                ],
-                "totalCred": 0.6145205590025852
-            },
-            {
-                "address": [
-                    "sourcecred",
-                    "discord",
-                    "MEMBER",
-                    "user",
-                    "537858848912834561"
-                ],
-                "intervalCred": [
-                    0,
-                    0.4974648333028999
-                ],
-                "totalCred": 0.4974648333028999
-            },
-            {
-                "address": [
-                    "sourcecred",
-                    "discord",
-                    "MEMBER",
-                    "user",
-                    "371754999304290304"
-                ],
-                "intervalCred": [
-                    0,
-                    0.31000931824515665
-                ],
-                "totalCred": 0.31000931824515665
-            },
-            {
-                "address": [
-                    "sourcecred",
-                    "discord",
-                    "MEMBER",
-                    "user",
-                    "665203331639148553"
-                ],
-                "intervalCred": [
-                    0,
-                    0.31000931824515665
-                ],
-                "totalCred": 0.31000931824515665
-            },
-            {
-                "address": [
-                    "sourcecred",
-                    "discord",
-                    "MEMBER",
-                    "user",
-                    "118260545211072517"
-                ],
-                "intervalCred": [
-                    0,
-                    0.29090564532622415
-                ],
-                "totalCred": 0.29090564532622415
-            }
-        ]
-    }
+	{
+		"type": "sourcecred/cli/scores",
+		"version": "0.2.0"
+	},
+	{
+		"intervals": [
+			{
+				"endTimeMs": 1586044800000,
+				"startTimeMs": 1585440000000
+			},
+			{
+				"endTimeMs": 1586649600000,
+				"startTimeMs": 1586044800000
+			}
+		],
+		"users": [
+			{
+				"address": ["sourcecred", "identity", "Aaron"],
+				"intervalCred": [2, 999.16831933246317],
+				"totalCred": 181.16831933246317
+			},
+			{
+				"address": ["sourcecred", "identity", "burrrata"],
+				"intervalCred": [0, 40.88683017529472],
+				"totalCred": 40.88683017529472
+			},
+			{
+				"address": [
+					"sourcecred",
+					"discord",
+					"MEMBER",
+					"user",
+					"440281764204642314"
+				],
+				"intervalCred": [0, 0.9219408181200885],
+				"totalCred": 0.9219408181200885
+			},
+			{
+				"address": [
+					"sourcecred",
+					"discord",
+					"MEMBER",
+					"user",
+					"683892894767251489"
+				],
+				"intervalCred": [0, 0.6145205590025852],
+				"totalCred": 0.6145205590025852
+			},
+			{
+				"address": [
+					"sourcecred",
+					"discord",
+					"MEMBER",
+					"user",
+					"537858848912834561"
+				],
+				"intervalCred": [0, 0.4974648333028999],
+				"totalCred": 0.4974648333028999
+			},
+			{
+				"address": [
+					"sourcecred",
+					"discord",
+					"MEMBER",
+					"user",
+					"371754999304290304"
+				],
+				"intervalCred": [0, 0.31000931824515665],
+				"totalCred": 0.31000931824515665
+			},
+			{
+				"address": [
+					"sourcecred",
+					"discord",
+					"MEMBER",
+					"user",
+					"665203331639148553"
+				],
+				"intervalCred": [0, 0.31000931824515665],
+				"totalCred": 0.31000931824515665
+			},
+			{
+				"address": [
+					"sourcecred",
+					"discord",
+					"MEMBER",
+					"user",
+					"118260545211072517"
+				],
+				"intervalCred": [0, 0.29090564532622415],
+				"totalCred": 0.29090564532622415
+			}
+		]
+	}
 ]
