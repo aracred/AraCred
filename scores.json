@@ -23,9 +23,9 @@
                 ],
                 "intervalCred": [
                     2,
-                    179.16831933246317
+                    175.7054563864545
                 ],
-                "totalCred": 181.16831933246317
+                "totalCred": 177.7054563864545
             },
             {
                 "address": [
@@ -35,9 +35,9 @@
                 ],
                 "intervalCred": [
                     0,
-                    40.88683017529472
+                    46.00339312173869
                 ],
-                "totalCred": 40.88683017529472
+                "totalCred": 46.00339312173869
             },
             {
                 "address": [
@@ -49,9 +49,9 @@
                 ],
                 "intervalCred": [
                     0,
-                    0.9219408181200885
+                    0.8850855600385499
                 ],
-                "totalCred": 0.9219408181200885
+                "totalCred": 0.8850855600385499
             },
             {
                 "address": [
@@ -63,51 +63,9 @@
                 ],
                 "intervalCred": [
                     0,
-                    0.6145205590025852
+                    0.6055423013423623
                 ],
-                "totalCred": 0.6145205590025852
-            },
-            {
-                "address": [
-                    "sourcecred",
-                    "discord",
-                    "MEMBER",
-                    "user",
-                    "537858848912834561"
-                ],
-                "intervalCred": [
-                    0,
-                    0.4974648333028999
-                ],
-                "totalCred": 0.4974648333028999
-            },
-            {
-                "address": [
-                    "sourcecred",
-                    "discord",
-                    "MEMBER",
-                    "user",
-                    "371754999304290304"
-                ],
-                "intervalCred": [
-                    0,
-                    0.31000931824515665
-                ],
-                "totalCred": 0.31000931824515665
-            },
-            {
-                "address": [
-                    "sourcecred",
-                    "discord",
-                    "MEMBER",
-                    "user",
-                    "665203331639148553"
-                ],
-                "intervalCred": [
-                    0,
-                    0.31000931824515665
-                ],
-                "totalCred": 0.31000931824515665
+                "totalCred": 0.6055423013423623
             },
             {
                 "address": [
@@ -119,9 +77,65 @@
                 ],
                 "intervalCred": [
                     0,
-                    0.29090564532622415
+                    0.5545911156949018
                 ],
-                "totalCred": 0.29090564532622415
+                "totalCred": 0.5545911156949018
+            },
+            {
+                "address": [
+                    "sourcecred",
+                    "discord",
+                    "MEMBER",
+                    "user",
+                    "537858848912834561"
+                ],
+                "intervalCred": [
+                    0,
+                    0.5276309500470371
+                ],
+                "totalCred": 0.5276309500470371
+            },
+            {
+                "address": [
+                    "sourcecred",
+                    "discord",
+                    "MEMBER",
+                    "user",
+                    "371754999304290304"
+                ],
+                "intervalCred": [
+                    0,
+                    0.3380314958283998
+                ],
+                "totalCred": 0.3380314958283998
+            },
+            {
+                "address": [
+                    "sourcecred",
+                    "discord",
+                    "MEMBER",
+                    "user",
+                    "665203331639148553"
+                ],
+                "intervalCred": [
+                    0,
+                    0.3380314958283998
+                ],
+                "totalCred": 0.3380314958283998
+            },
+            {
+                "address": [
+                    "sourcecred",
+                    "discord",
+                    "MEMBER",
+                    "user",
+                    "250086586450968576"
+                ],
+                "intervalCred": [
+                    0,
+                    0.04223757302716769
+                ],
+                "totalCred": 0.04223757302716769
             }
         ]
     }
