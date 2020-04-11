@@ -82,3 +82,4 @@ const grain = () => {
 };
 
 console.log(mintSettings(data, book, transaction));
+grain();
