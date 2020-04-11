@@ -31,6 +31,8 @@ jobs:
         run: npm install -g @aragon/cli
       - name: list current folder
         run: ls -lA
+      - name: woking dir
+        run: pwd
       - name: Prepare transaction
         run: node ./src/processGrain.js
       - name: Log Transaction
