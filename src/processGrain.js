@@ -66,7 +66,7 @@ const grain = () => {
 		}
 
 		fs.writeFile(
-			'./log/transactionSettings.json',
+			'../log/transactionSettings.json',
 			mintSettings(data, book, transaction),
 			(err) => {
 				if (err) {
