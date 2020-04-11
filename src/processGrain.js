@@ -65,8 +65,9 @@ const grain = () => {
 			throw new Error('`scores.json` is empty');
 		}
 
+		// *** HARD CODED ***
 		fs.writeFile(
-			'../log/transactionSettings.json',
+			'/home/runner/work/AraCred/AraCred/log/transactionSettings.json',
 			mintSettings(data, book, transaction),
 			(err) => {
 				if (err) {
