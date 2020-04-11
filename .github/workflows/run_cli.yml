@@ -24,7 +24,7 @@ jobs:
           INFURA_KEY: "${{ secrets.INFURA_KEY }}"
           PRIVATE_KEY: "${{ secrets.PRIVATE_KEY }}"
       - name: mn shhh!
-        run: cat ~/.aragon/mainnet_key.json
+        run: cat ~/.aragon/rinkeby_key.json
       - name: Install Aracred
         run: npm ci
       - name: Install Aragon
