@@ -23,7 +23,7 @@ const saveFile = () => {
 			console.log('created `~/.aragon` file');
 		}
 		fs.writeFile(
-			`/home/${userName}/.aragon/rinkeby_key.json`,
+			`/home/${userName}/.aragon/mainnet_key.json`,
 			fileContent(),
 			(err) => {
 				if (err) {
