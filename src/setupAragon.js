@@ -7,7 +7,7 @@ const {INFURA_KEY, PRIVATE_KEY} = process.env;
 const fileContent = () => {
 	return JSON.stringify(
 		{
-			rpc: `https://mainnet.infura.io/v3/${INFURA_KEY}`,
+			rpc: `https://rinkeby.infura.io/v3/${INFURA_KEY}`,
 			keys: [`${PRIVATE_KEY}`],
 		},
 		null,
@@ -23,7 +23,7 @@ const saveFile = () => {
 			console.log('created `~/.aragon` file');
 		}
 		fs.writeFile(
-			`/home/${userName}/.aragon/mainnet_key.json`,
+			`/home/${userName}/.aragon/rinkeby_key.json`,
 			fileContent(),
 			(err) => {
 				if (err) {
@@ -38,6 +38,6 @@ const saveFile = () => {
 		process.exit(-1);
 	}
 };
-console.log(fileContent());
+
 saveFile();
 module.export = {fileContent, saveFile};
