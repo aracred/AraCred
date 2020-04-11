@@ -7,7 +7,7 @@ const {INFURA_KEY, PRIVATE_KEY} = process.env;
 const fileContent = () => {
 	return JSON.stringify(
 		{
-			rpc: `https://mainnet.infura.io/v3/${INFURA_KEY}`,
+			rpc: `https://rinkeby.infura.io/v3/${INFURA_KEY}`,
 			keys: [`${PRIVATE_KEY}`],
 		},
 		null,
@@ -29,7 +29,7 @@ const saveFile = () => {
 				if (err) {
 					console.log('Error writing file', err);
 				} else {
-					console.log('Successfully setup signer');
+					console.log('Successfully setup keys');
 				}
 			},
 		);
@@ -38,6 +38,6 @@ const saveFile = () => {
 		process.exit(-1);
 	}
 };
-
+console.log(fileContent());
 saveFile();
 module.export = {fileContent, saveFile};
