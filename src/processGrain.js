@@ -67,7 +67,7 @@ const grain = () => {
 
 		// *** HARD CODED ***
 		fs.writeFile(
-			'/home/runner/work/AraCred/AraCred/log/transactionSettings.json',
+			'./log/transactionSettings.json',
 			mintSettings(data, book, transaction),
 			(err) => {
 				if (err) {
