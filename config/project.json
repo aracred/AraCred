@@ -90,6 +90,10 @@
 				"name": "leaderboard",
 				"owner": "aracred"
 			},
+			{
+				"name": "aracred-cli",
+				"owner": "aracred"
+			},
 		]
 	}
 ]
