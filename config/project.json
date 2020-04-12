@@ -25,8 +25,40 @@
 				"aliases": ["github/pythonpete32", "discord/571023281382227978"]
 			},
 			{
-				"username": "luke",
-				"aliases": ["github/lkngtn", "discord/657069807505637397"]
+				"username": "lkngtn",
+				"aliases": ["github/lkngtn", "discord/363774203960360961"]
+			},
+			{
+				"username": "cslarson",
+				"aliases": ["github/cslarson"]
+			},
+			{
+				"username": "0xGabi",
+				"aliases": ["github/0xgabi"]
+			},
+			{
+				"username": "sembrestels",
+				"aliases": ["github/sembrestels"]
+			},
+			{
+				"username": "fabriziovigevani",
+				"aliases": ["github/fabriziovigevani"]
+			},
+			{
+				"username": "fioreb",
+				"aliases": ["github/fioreb"]
+			},
+			{
+				"username": "onbjerg",
+				"aliases": ["github/onbjerg"]
+			},
+			{
+				"username": "rperez",
+				"aliases": ["github/rperez89"]
+			},
+			{
+				"username": "willjgriff",
+				"aliases": ["github/willjgriff"]
 			}
 		],
 		"repoIds": [
