@@ -77,7 +77,19 @@
 			{
 				"name": "TheSource",
 				"owner": "aracred"
-			}
+			},
+			{
+				"name": "governance",
+				"owner": "aracred"
+			},
+			{
+				"name": "comms",
+				"owner": "aracred"
+			},
+			{
+				"name": "leaderboard",
+				"owner": "aracred"
+			},
 		]
 	}
 ]
