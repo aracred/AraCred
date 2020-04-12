@@ -23,19 +23,11 @@ jobs:
         env:
           INFURA_KEY: "${{ secrets.INFURA_KEY }}"
           PRIVATE_KEY: "${{ secrets.PRIVATE_KEY }}"
-      - name: mn shhh!
-        run: cat ~/.aragon/rinkeby_key.json
       - name: Install Aracred
         run: npm ci
       - name: Install Aragon
         run: npm install -g @aragon/cli
-      - name: list current folder
-        run: ls -lA
-      - name: woking dir
-        run: pwd
       - name: Prepare transaction
         run: node ./src/processGrain.js
-      - name: Log Transaction
-        run: node ./src/mint.js
       - name: Sending Transaction
         run: node ./src/mint.js | sh
