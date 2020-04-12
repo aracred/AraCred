@@ -1,82 +1,82 @@
 [
-  {
-    "name": "decentralion",
-    "createdAt": 1585730646045,
-    "address": "0xee611225d5066b79f3cc25fe6c901fc96cd03376"
-  },
-  {
-    "name": "ericronne",
-    "createdAt": 1585730654762,
-    "address": "0x936883404a1c8dab2fa70c3fcda870334f401b29"
-  },
-  {
-    "name": "peth-yursick",
-    "createdAt": 1585730660595,
-    "address": "0x6a1cf24C645DB2e37141Fa12E70Cb67e56b336f3"
-  },
-  {
-    "name": "burrrata",
-    "createdAt": 1585730646045,
-    "address": "0x6a1cf24C645DB2e37141Fa12E70Cb67e56b336f3"
-  },
-  {
-    "name": "mZ",
-    "createdAt": 1585730654762,
-    "address": "0xd7828A5B29e4Ed87b4867061985b8AC1146D37fe"
-  },
-  {
-    "name": "AdrienDLT",
-    "createdAt": 1585730660595,
-    "address": "0x577cCBFE96aF75171881Caef6f0bD6Bc7D6eb4Ef"
-  },
-  {
-    "name": "JayWelsh",
-    "createdAt": 1585730646045,
-    "address": "0xF027000b2bb284ceeCAd2bf6bA2Ef1A6b9795Fb6"
-  },
-  {
-    "name": "penguin",
-    "createdAt": 1585730654762,
-    "address": "0xD3adE991dC7Eb350685d7f842Df5bcB40dd748ab"
-  },
-  {
-    "name": "pacobacpac",
-    "createdAt": 1585730660595,
-    "address": "0x71CD96e44Da54739cd37F85C10a7Be928F339e85"
-  },
-  {
-    "name": "Saimano",
-    "createdAt": 1585730646045,
-    "address": "0x8264915E4d6a9208411fcBcEc060ac439b00f0B3"
-  },
-  {
-    "name": "nicolas-law",
-    "createdAt": 1585730654762,
-    "address": "0xe83D7dD611C528B095C1B4113F1e8E1756c116b8"
-  },
-  {
-    "name": "sepu85",
-    "createdAt": 1585730660595,
-    "address": "0x932aE0c0379CF0917Fb0e435BE956848932f6656"
-  },
-  {
-    "name": "Beanow",
-    "createdAt": 1585730646045,
-    "address": "0x6215fBFbf0F6f1570808846c8F4fb357f2d81657"
-  },
-  {
-    "name": "sbutler-gh",
-    "createdAt": 1585730654762,
-    "address": "0x9Bcbe0ae1478f20BF419439b4B294677ae03987B"
-  },
-  {
-    "name": "AlexMasmej",
-    "createdAt": 1585730660595,
-    "address": "0x0535ea48345a8F9bC9E0597Fa2c62aE50301a51D"
-  },
-  {
-    "name": "moarshy",
-    "createdAt": 1585730660595,
-    "address": "0x7EC7A9c6265Dc762050de22194E8A818ed9fCB19"
-  }
+	{
+		"name": "Aaron",
+		"createdAt": 1585730646045,
+		"address": "0xee611225d5066b79f3cc25fe6c901fc96cd03376"
+	},
+	{
+		"name": "Luke",
+		"createdAt": 1585730654762,
+		"address": "0x936883404a1c8dab2fa70c3fcda870334f401b29"
+	},
+	{
+		"name": "Joe",
+		"createdAt": 1585730660595,
+		"address": "0x6a1cf24C645DB2e37141Fa12E70Cb67e56b336f3"
+	},
+	{
+		"name": "burrrata",
+		"createdAt": 1585730646045,
+		"address": "0x6a1cf24C645DB2e37141Fa12E70Cb67e56b336f3"
+	},
+	{
+		"name": "someRandomGuy",
+		"createdAt": 1585730654762,
+		"address": "0xd7828A5B29e4Ed87b4867061985b8AC1146D37fe"
+	},
+	{
+		"name": "AdrienDLT",
+		"createdAt": 1585730660595,
+		"address": "0x577cCBFE96aF75171881Caef6f0bD6Bc7D6eb4Ef"
+	},
+	{
+		"name": "JayWelsh",
+		"createdAt": 1585730646045,
+		"address": "0xF027000b2bb284ceeCAd2bf6bA2Ef1A6b9795Fb6"
+	},
+	{
+		"name": "penguin",
+		"createdAt": 1585730654762,
+		"address": "0xD3adE991dC7Eb350685d7f842Df5bcB40dd748ab"
+	},
+	{
+		"name": "pacobacpac",
+		"createdAt": 1585730660595,
+		"address": "0x71CD96e44Da54739cd37F85C10a7Be928F339e85"
+	},
+	{
+		"name": "Saimano",
+		"createdAt": 1585730646045,
+		"address": "0x8264915E4d6a9208411fcBcEc060ac439b00f0B3"
+	},
+	{
+		"name": "nicolas-law",
+		"createdAt": 1585730654762,
+		"address": "0xe83D7dD611C528B095C1B4113F1e8E1756c116b8"
+	},
+	{
+		"name": "sepu85",
+		"createdAt": 1585730660595,
+		"address": "0x932aE0c0379CF0917Fb0e435BE956848932f6656"
+	},
+	{
+		"name": "Beanow",
+		"createdAt": 1585730646045,
+		"address": "0x6215fBFbf0F6f1570808846c8F4fb357f2d81657"
+	},
+	{
+		"name": "sbutler-gh",
+		"createdAt": 1585730654762,
+		"address": "0x9Bcbe0ae1478f20BF419439b4B294677ae03987B"
+	},
+	{
+		"name": "AlexMasmej",
+		"createdAt": 1585730660595,
+		"address": "0x0535ea48345a8F9bC9E0597Fa2c62aE50301a51D"
+	},
+	{
+		"name": "moarshy",
+		"createdAt": 1585730660595,
+		"address": "0x7EC7A9c6265Dc762050de22194E8A818ed9fCB19"
+	}
 ]
