@@ -65,12 +65,13 @@ const grain = () => {
 			throw new Error('`scores.json` is empty');
 		}
 
+		// *** HARD CODED ***
 		fs.writeFile(
 			'./log/transactionSettings.json',
 			mintSettings(data, book, transaction),
 			(err) => {
 				if (err) {
-					console.log('Did not save mint settings');
+					console.log('Did not save transaction settings');
 					console.log(err);
 				}
 			},
