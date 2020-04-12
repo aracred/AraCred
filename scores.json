@@ -12,6 +12,10 @@
             {
                 "endTimeMs": 1586649600000,
                 "startTimeMs": 1586044800000
+            },
+            {
+                "endTimeMs": 1587254400000,
+                "startTimeMs": 1586649600000
             }
         ],
         "users": [
@@ -23,9 +27,10 @@
                 ],
                 "intervalCred": [
                     2,
-                    213.43843608785033
+                    221.33307594128678,
+                    141.6294019082244
                 ],
-                "totalCred": 215.43843608785033
+                "totalCred": 364.9624778495112
             },
             {
                 "address": [
@@ -35,9 +40,10 @@
                 ],
                 "intervalCred": [
                     0,
-                    87.06091767243888
+                    92.39713210608045,
+                    80.74193353831201
                 ],
-                "totalCred": 87.06091767243888
+                "totalCred": 173.13906564439247
             },
             {
                 "address": [
@@ -49,9 +55,10 @@
                 ],
                 "intervalCred": [
                     0,
-                    1.0694213750187136
+                    1.0069342060829523,
+                    0.6176824129048887
                 ],
-                "totalCred": 1.0694213750187136
+                "totalCred": 1.624616618987841
             },
             {
                 "address": [
@@ -63,9 +70,10 @@
                 ],
                 "intervalCred": [
                     0,
-                    0.9373765653539371
+                    0.8928223218780029,
+                    0.5300719894258455
                 ],
-                "totalCred": 0.9373765653539371
+                "totalCred": 1.4228943113038484
             },
             {
                 "address": [
@@ -77,9 +85,10 @@
                 ],
                 "intervalCred": [
                     0,
-                    0.8601316682433297
+                    0.8340036870691926,
+                    0.4682415334747928
                 ],
-                "totalCred": 0.8601316682433297
+                "totalCred": 1.3022452205439854
             },
             {
                 "address": [
@@ -91,9 +100,10 @@
                 ],
                 "intervalCred": [
                     0,
-                    0.6727728315655679
+                    0.6338709357922101,
+                    0.39094598990178825
                 ],
-                "totalCred": 0.6727728315655679
+                "totalCred": 1.0248169256939983
             },
             {
                 "address": [
@@ -105,9 +115,10 @@
                 ],
                 "intervalCred": [
                     0,
-                    0.4577075340982061
+                    0.42889411677613815,
+                    0.271557378543101
                 ],
-                "totalCred": 0.4577075340982061
+                "totalCred": 0.7004514953192391
             },
             {
                 "address": [
@@ -119,9 +130,25 @@
                 ],
                 "intervalCred": [
                     0,
-                    0.4577075340982061
+                    0.42889411677613815,
+                    0.271557378543101
                 ],
-                "totalCred": 0.4577075340982061
+                "totalCred": 0.7004514953192391
+            },
+            {
+                "address": [
+                    "sourcecred",
+                    "discord",
+                    "MEMBER",
+                    "user",
+                    "208321561982271489"
+                ],
+                "intervalCred": [
+                    0,
+                    0,
+                    0.6656298410867325
+                ],
+                "totalCred": 0.6656298410867325
             },
             {
                 "address": [
@@ -133,9 +160,127 @@
                 ],
                 "intervalCred": [
                     0,
-                    0.04552873133281695
+                    0.04437256825814128,
+                    0.41297802958334684
                 ],
-                "totalCred": 0.04552873133281695
+                "totalCred": 0.4573505978414881
+            },
+            {
+                "address": [
+                    "sourcecred",
+                    "identity",
+                    "0xGabi"
+                ],
+                "intervalCred": [
+                    0,
+                    0,
+                    0
+                ],
+                "totalCred": 0
+            },
+            {
+                "address": [
+                    "sourcecred",
+                    "identity",
+                    "cslarson"
+                ],
+                "intervalCred": [
+                    0,
+                    0,
+                    0
+                ],
+                "totalCred": 0
+            },
+            {
+                "address": [
+                    "sourcecred",
+                    "identity",
+                    "fabriziovigevani"
+                ],
+                "intervalCred": [
+                    0,
+                    0,
+                    0
+                ],
+                "totalCred": 0
+            },
+            {
+                "address": [
+                    "sourcecred",
+                    "identity",
+                    "fioreb"
+                ],
+                "intervalCred": [
+                    0,
+                    0,
+                    0
+                ],
+                "totalCred": 0
+            },
+            {
+                "address": [
+                    "sourcecred",
+                    "identity",
+                    "lkngtn"
+                ],
+                "intervalCred": [
+                    0,
+                    0,
+                    0
+                ],
+                "totalCred": 0
+            },
+            {
+                "address": [
+                    "sourcecred",
+                    "identity",
+                    "onbjerg"
+                ],
+                "intervalCred": [
+                    0,
+                    0,
+                    0
+                ],
+                "totalCred": 0
+            },
+            {
+                "address": [
+                    "sourcecred",
+                    "identity",
+                    "rperez"
+                ],
+                "intervalCred": [
+                    0,
+                    0,
+                    0
+                ],
+                "totalCred": 0
+            },
+            {
+                "address": [
+                    "sourcecred",
+                    "identity",
+                    "sembrestels"
+                ],
+                "intervalCred": [
+                    0,
+                    0,
+                    0
+                ],
+                "totalCred": 0
+            },
+            {
+                "address": [
+                    "sourcecred",
+                    "identity",
+                    "willjgriff"
+                ],
+                "intervalCred": [
+                    0,
+                    0,
+                    0
+                ],
+                "totalCred": 0
             }
         ]
     }
