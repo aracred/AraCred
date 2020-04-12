@@ -1,45 +1,43 @@
 [
-  {
-    "type": "sourcecred/project",
-    "version": "0.4.0"
-  },
-  {
-    "id": "@AraCred",
-    "discord": {
-      "guildId": "695344751490236486",
-      "reactionWeights": {
-        "👍": 1,
-        "🔥": 1,
-        "❤️": 1,
-        "💯": 1,
-        "🙏": 1
-      }
-    },
-    "identities": [
-      {
-        "username": "burrrata",
-        "aliases": [
-          "github/burrrata",
-          "discord/657069807505637397"
-        ]
-      },
-      {
-        "username": "Aaron",
-        "aliases": [
-          "github/pythonpete32",
-          "discord/571023281382227978"
-        ]
-      }
-    ],
-    "repoIds": [
-      {
-        "name": "AraCred",
-        "owner": "aracred"
-      },
-      {
-        "name": "website",
-        "owner": "aracred"
-      }
-    ]
-  }
+	{
+		"type": "sourcecred/project",
+		"version": "0.4.0"
+	},
+	{
+		"id": "@AraCred",
+		"discord": {
+			"guildId": "695344751490236486",
+			"reactionWeights": {
+				"👍": 1,
+				"🔥": 1,
+				"❤️": 1,
+				"💯": 1,
+				"🙏": 1
+			}
+		},
+		"identities": [
+			{
+				"username": "burrrata",
+				"aliases": ["github/burrrata", "discord/657069807505637397"]
+			},
+			{
+				"username": "Aaron",
+				"aliases": ["github/pythonpete32", "discord/571023281382227978"]
+			},
+			{
+				"username": "luke",
+				"aliases": ["github/lkngtn", "discord/657069807505637397"]
+			}
+		],
+		"repoIds": [
+			{
+				"name": "AraCred",
+				"owner": "aracred"
+			},
+			{
+				"name": "website",
+				"owner": "aracred"
+			}
+		]
+	}
 ]
