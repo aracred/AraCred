@@ -3,7 +3,7 @@
 		"daoAddress": "0xf54A31E22344cb90708AD48061cB9AE58dEa8aFf",
 		"tokenManagerAddress": "0x9da64e7b01a748eda68dc921739b27053669eb83",
 		"votingAddress": "0x91d6d8d04822d2a11d9629371a8cefc2ab278fb8",
-		"environment": "rinkeby",
+		"environment": "mainnet",
 		"mints": [],
 		"burns": []
 	}
