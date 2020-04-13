@@ -25,6 +25,18 @@
 				"aliases": ["github/pythonpete32", "discord/571023281382227978"]
 			},
 			{
+				"username": "hammadj",
+				"aliases": ["github/hammadj", "discord/118260545211072517"]
+			},
+			{
+				"username": "dandelion",
+				"aliases": ["github/decentralion", "discord/420341518948237331"]
+			},
+			{
+				"username": "mzargham",
+				"aliases": ["github/mzargham", "discord/250086586450968576"]
+			},
+			{
 				"username": "lkngtn",
 				"aliases": ["github/lkngtn", "discord/363774203960360961"]
 			},
@@ -68,6 +80,30 @@
 			},
 			{
 				"name": "website",
+				"owner": "aracred"
+			},
+			{
+				"name": "onboarding",
+				"owner": "aracred"
+			},
+			{
+				"name": "TheSource",
+				"owner": "aracred"
+			},
+			{
+				"name": "governance",
+				"owner": "aracred"
+			},
+			{
+				"name": "comms",
+				"owner": "aracred"
+			},
+			{
+				"name": "leaderboard",
+				"owner": "aracred"
+			},
+			{
+				"name": "aracred-cli",
 				"owner": "aracred"
 			}
 		]
