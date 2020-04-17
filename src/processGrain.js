@@ -14,18 +14,18 @@ const transaction = require('../config/dao.json');
  * @returns [address, latestCred] : false
  */
 const getScore = (score, addressBook) => {
-	const bookNames = addressBook.map((element) => element.name);
-	const scoreName = score.address[score.address.length - 1];
+  const bookNames = addressBook.map((element) => element.name);
+  const scoreName = score.address[score.address.length - 1];
 
-	return bookNames.includes(scoreName)
-		? [
-				addressBook.filter((entry) => entry.name === scoreName)[0].address,
-				new BigNumber(score.intervalCred[score.intervalCred.length - 1])
-					.toFixed(18)
-					.toString()
-					.replace('.', ''),
-		  ]
-		: false;
+  return bookNames.includes(scoreName)
+    ? [
+        addressBook.filter((entry) => entry.name === scoreName)[0].address,
+        new BigNumber(score.intervalCred[score.intervalCred.length - 1])
+          .toFixed(18)
+          .toString()
+          .replace('.', ''),
+      ]
+    : false;
 };
 
 /**
@@ -36,16 +36,16 @@ const getScore = (score, addressBook) => {
  * @returns transation settings
  */
 const mintSettings = (rawScore, addressBook, tx) => {
-	const {users} = rawScore[1];
+  const {users} = rawScore[1];
 
-	const whitelistedGrain = users
-		.filter((leaf) => getScore(leaf, addressBook))
-		.map((leaf) => getScore(leaf, addressBook));
+  const whitelistedGrain = users
+    .filter((leaf) => getScore(leaf, addressBook))
+    .map((leaf) => getScore(leaf, addressBook));
 
-	const settings = tx;
-	settings[0].mints = whitelistedGrain; // <-- maybe broken
+  const settings = tx;
+  settings[0].mints = whitelistedGrain; // <-- maybe broken
 
-	return JSON.stringify(settings, null, 2);
+  return JSON.stringify(settings, null, 2);
 };
 
 /**
@@ -53,34 +53,34 @@ const mintSettings = (rawScore, addressBook, tx) => {
  * @returns <Promise>
  */
 const grain = () => {
-	try {
-		// console.log(book)
+  try {
+    // console.log(book)
 
-		if (book.length < 1) {
-			console.log('this should never happen');
-			throw new Error('`addressbook.json` is empty');
-		}
-		if (data.length < 1) {
-			console.log('this should never happen');
-			throw new Error('`scores.json` is empty');
-		}
+    if (book.length < 1) {
+      console.log('this should never happen');
+      throw new Error('`addressbook.json` is empty');
+    }
+    if (data.length < 1) {
+      console.log('this should never happen');
+      throw new Error('`scores.json` is empty');
+    }
 
-		// *** HARD CODED ***
-		fs.writeFile(
-			'./log/transactionSettings.json',
-			mintSettings(data, book, transaction),
-			(err) => {
-				if (err) {
-					console.log('Did not save transaction settings');
-					console.log(err);
-				}
-			},
-		);
-		return 'file sucessfully written';
-	} catch (err) {
-		console.error(err);
-		process.exit(-1);
-	}
+    // *** HARD CODED ***
+    fs.writeFile(
+      './log/transactionSettings.json',
+      mintSettings(data, book, transaction),
+      (err) => {
+        if (err) {
+          console.log('Did not save transaction settings');
+          console.log(err);
+        }
+      },
+    );
+    return 'file sucessfully written';
+  } catch (err) {
+    console.error(err);
+    process.exit(-1);
+  }
 };
 
 console.log(mintSettings(data, book, transaction));
