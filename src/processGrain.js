@@ -6,9 +6,7 @@ const BigNumber = require('bignumber.js');
 const book = require('../config/addressbook.json');
 const data = require('../scores.json');
 const transaction = require('../config/dao.json');
-
-// ***Hardcoded*** ammount of tokens to mint per period
-const tokensToMint = 100;
+const {tokensToMint} = require('../config/schedule.json');
 
 /**
  * This function says hello.
