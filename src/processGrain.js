@@ -6,6 +6,7 @@ const BigNumber = require('bignumber.js');
 const book = require('../config/addressbook.json');
 const data = require('../scores.json');
 const transaction = require('../config/dao.json');
+const {tokensToMint} = require('../config/schedule.json');
 
 /**
  * This function says hello.
@@ -30,20 +31,31 @@ const getScore = (score, addressBook) => {
 
 /**
  * This function says hello.
- * @param rawScore
+ * @param rawScore scores as calculated by Sourcecres
  * @param addressBook `addressbook.json`
- * @param tx
+ * @param tx template tx
  * @returns transation settings
  */
 const mintSettings = (rawScore, addressBook, tx) => {
   const {users} = rawScore[1];
-
   const whitelistedGrain = users
     .filter((leaf) => getScore(leaf, addressBook))
     .map((leaf) => getScore(leaf, addressBook));
 
+  // ----------------------------------------------------------------
+  const total = whitelistedGrain
+    .map((score) => score[1])
+    .reduce((acc, val) => BigNumber(acc).plus(BigNumber(val)).toString());
+
+  const normalisedGrain = whitelistedGrain.map((user) => [
+    user[0],
+    BigNumber(user[1]).dividedBy(total).multipliedBy(tokensToMint).toString(),
+  ]);
+  // console.log(normalisedGrain);
+  // ----------------------------------------------------------------
+
   const settings = tx;
-  settings[0].mints = whitelistedGrain; // <-- maybe broken
+  settings[0].mints = normalisedGrain;
 
   return JSON.stringify(settings, null, 2);
 };
