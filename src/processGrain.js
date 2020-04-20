@@ -1,6 +1,4 @@
 /* eslint-disable consistent-return */
-/* eslint-disable indent */
-/* eslint-disable no-unused-vars */
 const fs = require('fs');
 const BigNumber = require('bignumber.js');
 const book = require('../config/addressbook.json');
@@ -9,10 +7,13 @@ const transaction = require('../config/dao.json');
 const {tokensToMint} = require('../config/schedule.json');
 
 /**
- * This function says hello.
- * @param score Element of `scores.json`[1].users array
- * @param addressBook `addressbook.json`
- * @returns [address, latestCred] : false
+ * processGrain helper function, Takes one user element from the `scores.json` file
+ * and searches for the users name in the `addressbook.json` file. If it finds
+ * it, the function returnns an array with the users address and the ammount
+ * of cred they accumulated in the period
+ * @param {Object} score Element of `scores.json`[1].users array
+ * @param {Object} addressBook `addressbook.json`
+ * @returns {array} [address, latestCred] : false
  */
 const getScore = (score, addressBook) => {
   const bookNames = addressBook.map((element) => element.name);
@@ -30,11 +31,13 @@ const getScore = (score, addressBook) => {
 };
 
 /**
- * This function says hello.
- * @param rawScore scores as calculated by Sourcecres
- * @param addressBook `addressbook.json`
- * @param tx template tx
- * @returns transation settings
+ * Main function in processGrain. It takes `scores.json`, `address.book`,
+ * and a template for the transaction handler. It returns the completed
+ * template required by the transaction handler.
+ * @param {Object} rawScore, the `scores.json` file calculated by Sourcecred
+ * @param {Object} addressbook, the `addressbook.json` file
+ * @param {Object} tx, template for the transation handler
+ * @returns {Object} transation settings
  */
 const mintSettings = (rawScore, addressBook, tx) => {
   const {users} = rawScore[1];
@@ -61,7 +64,7 @@ const mintSettings = (rawScore, addressBook, tx) => {
 };
 
 /**
- * This function says hello.
+ * Entry point to the `processGrain.js` script
  * @returns <Promise>
  */
 const grain = () => {
