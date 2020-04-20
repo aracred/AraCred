@@ -4,6 +4,12 @@ const fs = require('fs');
 const userName = require('os').userInfo().username;
 
 const {INFURA_KEY, PRIVATE_KEY} = process.env;
+
+/**
+ * produces the contents of `mainnet_key.json`. This file is used by the
+ * aragonCLI to sign transactions
+ * @returns {string} stringfied content of `mainnet_key`
+ */
 const fileContent = () => {
   return JSON.stringify(
     {
@@ -15,6 +21,9 @@ const fileContent = () => {
   );
 };
 
+/**
+ * Entry point to the script. Saves `mainnet_key` to disk.
+ */
 const saveFile = () => {
   try {
     const dir = `/home/${userName}/.aragon`;
