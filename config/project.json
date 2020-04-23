@@ -202,10 +202,6 @@
       {
         "name": "aracred-init",
         "owner": "aracred"
-      },
-      {
-        "name": "aracred-template",
-        "owner": "aracred"
       }
     ]
   }
