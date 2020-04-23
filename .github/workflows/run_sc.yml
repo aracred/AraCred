@@ -36,7 +36,7 @@ jobs:
           SOURCECRED_DISCORD_TOKEN: ${{ secrets.SOURCECRED_DISCORD_TOKEN }}
         with:
           weights: ./config/weights.json
-          project: "@AraCred"
+          project: "@Test"
           project-file: ./config/project.json
           branch-against: master
           automated: "true"
