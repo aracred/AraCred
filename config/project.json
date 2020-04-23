@@ -1,7 +1,7 @@
 [
   {
     "type": "sourcecred/project",
-    "version": "0.5.0"
+    "version": "0.4.0"
   },
   {
     "id": "@AraCred",
@@ -163,50 +163,7 @@
       }
     ],
     "repoIds": [
-      {
-        "name": "AraCred",
-        "owner": "aracred"
-      },
-      {
-        "name": "website",
-        "owner": "aracred"
-      },
-      {
-        "name": "bot",
-        "owner": "aracred"
-      },
-      {
-        "name": "onboarding",
-        "owner": "aracred"
-      },
-      {
-        "name": "TheSource",
-        "owner": "aracred"
-      },
-      {
-        "name": "governance",
-        "owner": "aracred"
-      },
-      {
-        "name": "comms",
-        "owner": "aracred"
-      },
-      {
-        "name": "leaderboard",
-        "owner": "aracred"
-      },
-      {
-        "name": "aracred-cli",
-        "owner": "aracred"
-      },
-      {
-        "name": "aracred-init",
-        "owner": "aracred"
-      },
-      {
-        "name": "aracred-template",
-        "owner": "aracred"
-      }
+
     ]
   }
 ]
