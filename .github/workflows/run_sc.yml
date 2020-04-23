@@ -2,9 +2,9 @@ name: "Run SourceCred"
 
 on:
   # Trigger on merging to master.
-  #push:
-    #branches:
-      #- master
+  push:
+    branches:
+      - master
   # As well as every 24 hours.
   schedule:
     - cron: 0 */24 * * *
