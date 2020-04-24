@@ -15,6 +15,10 @@
         "🙏": 1
       }
     },
+    "discourseServer": {
+      "serverUrl": "https://forum.metagame.wtf",
+      "serverUrl": "https://discourse.sourcecred.io/"
+    },
     "identities": [
       {
         "username": "burrrata",
