@@ -17,7 +17,7 @@
     },
     "discourseServer": {
       "serverUrl": "https://forum.metagame.wtf",
-      "serverUrl": "https://discourse.sourcecred.io/"
+      "serverUrl": "https://discourse.sourcecred.io"
     },
     "identities": [
       {
