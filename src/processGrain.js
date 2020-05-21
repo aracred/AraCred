@@ -3,8 +3,17 @@ const fs = require('fs');
 const BigNumber = require('bignumber.js');
 const book = require('../config/addressbook.json');
 const data = require('../scores.json');
-const transaction = require('../config/dao.json');
-const {tokensToMint} = require('../config/schedule.json');
+const { 
+  daoAddress,
+  tokenManagerAddress,
+  votingAddress,
+  financeAddress,
+  environment,
+  tokensToMint,
+  tokenAddress,
+  mode
+} = require('../config/config.json')
+
 
 /**
  * processGrain helper function, Takes one user element from the `scores.json` file
@@ -30,16 +39,32 @@ const getScore = (score, addressBook) => {
     : false;
 };
 
+const getScoreAndName = (score, addressBook) => {
+  const bookNames = addressBook.map((element) => element.name);
+  const scoreName = score.address[score.address.length - 1];
+
+  return bookNames.includes(scoreName)
+    ? [
+        addressBook.filter((entry) => entry.name === scoreName)[0].address,
+        new BigNumber(score.intervalCred[score.intervalCred.length - 1])
+          .toFixed(18)
+          .toString()
+          .replace('.', ''),
+        scoreName
+      ]
+    : false;
+};
+
+
 /**
  * Main function in processGrain. It takes `scores.json`, `address.book`,
  * and a template for the transaction handler. It returns the completed
  * template required by the transaction handler.
  * @param {Object} rawScore, the `scores.json` file calculated by Sourcecred
  * @param {Object} addressbook, the `addressbook.json` file
- * @param {Object} tx, template for the transation handler
  * @returns {Object} transation settings
  */
-const mintSettings = (rawScore, addressBook, tx) => {
+const mintSettings = (rawScore, addressBook) => {
   const {users} = rawScore[1];
   const whitelistedGrain = users
     .filter((leaf) => getScore(leaf, addressBook))
@@ -57,8 +82,45 @@ const mintSettings = (rawScore, addressBook, tx) => {
   // console.log(normalisedGrain);
   // ----------------------------------------------------------------
 
-  const settings = tx;
+  const settings = [{}];
+  settings[0].daoAddress = daoAddress;
+  settings[0].tokenManagerAddress = tokenManagerAddress;
+  settings[0].votingAddress = votingAddress;
+  settings[0].environment = environment;
   settings[0].mints = normalisedGrain;
+  settings[0].burns = [];
+  return JSON.stringify(settings, null, 2);
+};
+
+const transferSettings = (rawScore, addressBook) => {
+  const {users} = rawScore[1];
+  const whitelistedGrain = users
+    .filter((leaf) => getScoreAndName(leaf, addressBook))
+    .map((leaf) => getScoreAndName(leaf, addressBook));
+
+  // ----------------------------------------------------------------
+  const total = whitelistedGrain
+    .map((score) => score[1])
+    .reduce((acc, val) => BigNumber(acc).plus(BigNumber(val)).toString());
+
+  const normalisedGrain = whitelistedGrain.map((user) => {
+    return {
+      "tokenAddress": tokenAddress,
+      "recieverAddress": user[0],
+      "ammount": BigNumber(user[1]).dividedBy(total).multipliedBy(tokensToMint).toString(),
+      "reciept": user[2]
+    }
+  });
+  // console.log(normalisedGrain);
+  // ----------------------------------------------------------------
+
+  const settings = [{}];
+  settings[0].daoAddress = daoAddress;
+  settings[0].votingAddress = votingAddress;
+  settings[0].financeAddress = financeAddress;
+  settings[0].environment = environment;
+  settings[0].payments = normalisedGrain;
+
 
   return JSON.stringify(settings, null, 2);
 };
@@ -70,7 +132,6 @@ const mintSettings = (rawScore, addressBook, tx) => {
 const grain = () => {
   try {
     // console.log(book)
-
     if (book.length < 1) {
       console.log('this should never happen');
       throw new Error('`addressbook.json` is empty');
@@ -80,17 +141,28 @@ const grain = () => {
       throw new Error('`scores.json` is empty');
     }
 
-    // *** HARD CODED ***
-    fs.writeFile(
+    mode === 'mint' 
+    ? fs.writeFile(
       './log/transactionSettings.json',
-      mintSettings(data, book, transaction),
+      mintSettings(data, book),
       (err) => {
         if (err) {
           console.log('Did not save transaction settings');
           console.log(err);
         }
       },
-    );
+    )
+    : fs.writeFile(
+      './log/transactionSettings.json',
+      transferSettings(data, book),
+      (err) => {
+        if (err) {
+          console.log('Did not save transaction settings');
+          console.log(err);
+        }
+      },
+    )
+
     return 'file sucessfully written';
   } catch (err) {
     console.error(err);
@@ -98,5 +170,4 @@ const grain = () => {
   }
 };
 
-console.log(mintSettings(data, book, transaction));
 console.log(grain());

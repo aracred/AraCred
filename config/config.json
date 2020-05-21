@@ -2,6 +2,8 @@
     "daoAddress": "0xE4A4f93ED28238c912bF8D1033627717e69b1e96",
     "tokenManagerAddress": "0x9c55557d441ed45bea3726d51791fc072c48c6a1",
     "votingAddress": "0x61d4f81c98ba8c3ad39c2832094384b90e774ff7",
+    "financeAddress": "0x7cd2df9217173528110e2c44eb18bd4cf0bbc601",
+    "tokenAddress": "0x97fbD86BF92C5A206896C8e5FCa55702828B4C43",
     "environment": "mainnet",
     "tokensToMint": "100",
     "mode": "transfer"
