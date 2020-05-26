@@ -1,10 +1,10 @@
 {
-    "daoAddress": "0xE4A4f93ED28238c912bF8D1033627717e69b1e96",
-    "tokenManagerAddress": "0x9c55557d441ed45bea3726d51791fc072c48c6a1",
-    "votingAddress": "0x61d4f81c98ba8c3ad39c2832094384b90e774ff7",
-    "financeAddress": "0x7cd2df9217173528110e2c44eb18bd4cf0bbc601",
-    "tokenAddress": "0x97fbD86BF92C5A206896C8e5FCa55702828B4C43",
-    "environment": "mainnet",
+    "daoAddress": "0xc466e089CfC2935dF3f471AC291402e00d41C9D7",
+    "tokenManagerAddress": "0x87a31b9a2ee0b7b7899192e94eec3334135d607e",
+    "votingAddress": "0x29c58e25df47f1b958e1d707fb7b4a9800554d5c",
+    "financeAddress": "0x3d94088d031ac1eebd888aa61e741b6f10f4c6d8",
+    "tokenAddress": "0x0527e400502d0cb4f214dd0d2f2a323fc88ff924",
+    "environment": "rinkeby",
     "tokensToMint": "100",
     "mode": "transfer"
 }
