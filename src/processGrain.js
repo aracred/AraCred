@@ -89,6 +89,8 @@ const mintSettings = (rawScore, addressBook) => {
   settings[0].environment = environment;
   settings[0].mints = normalisedGrain;
   settings[0].burns = [];
+  
+  console.log(JSON.stringify(settings, null, 2))
   return JSON.stringify(settings, null, 2);
 };
 
@@ -121,7 +123,7 @@ const transferSettings = (rawScore, addressBook) => {
   settings[0].environment = environment;
   settings[0].payments = normalisedGrain;
 
-
+  console.log(JSON.stringify(settings, null, 2))
   return JSON.stringify(settings, null, 2);
 };
 
