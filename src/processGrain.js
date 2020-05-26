@@ -105,13 +105,16 @@ const transferSettings = (rawScore, addressBook) => {
     .map((score) => score[1])
     .reduce((acc, val) => BigNumber(acc).plus(BigNumber(val)).toString());
 
-  const normalisedGrain = whitelistedGrain.map((user) => {
-    return {
-      "tokenAddress": tokenAddress,
-      "receiverAddress": user[0],
-      "amount": BigNumber(user[1]).dividedBy(total).multipliedBy(tokensToMint).toString().replace(".", ""),
-      "receipt": user[2]
-    }
+  //console.log(whitelistedGrain)
+  const normalisedGrain = whitelistedGrain
+    .filter(user => user[1] > 0)
+    .map((user) => {
+      return {
+        "tokenAddress": tokenAddress,
+        "receiverAddress": user[0],
+        "amount": BigNumber(user[1]).dividedBy(total).multipliedBy(tokensToMint).toString().replace(".", ""),
+        "receipt": user[2]
+      }
   });
   // console.log(normalisedGrain);
   // ----------------------------------------------------------------
