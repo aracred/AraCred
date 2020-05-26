@@ -7,7 +7,7 @@ const {
   financeAddress,
   payments,
   environment,
-} = require('../log/transactionSettings.json.json');
+} = require('../log/transactionSettings.json');
 
 async function main() {
   // Encode a bunch of payments.
