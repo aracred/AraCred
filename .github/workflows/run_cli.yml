@@ -4,7 +4,7 @@ on:
   # Trigger on merging to master.
   push:
     branches:
-      - schedule
+      - transfer
   # Runs the CLI At 00:00 on Sunday.
   schedule:
     - cron: 0 0 * * 0
@@ -37,4 +37,4 @@ jobs:
       - name: Prepare transaction
         run: node ./src/processGrain.js
       - name: Sending Transaction
-        run: node ./src/mint.js | sh
+        run: node ./src/runAction.js | sh
