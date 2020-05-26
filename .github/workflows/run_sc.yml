@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - master
+      - transfer
   # As well as every 24 hours.
   schedule:
     - cron: 0 */24 * * *
