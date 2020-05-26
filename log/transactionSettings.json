@@ -13,7 +13,7 @@
       },
       {
         "tokenAddress": "0x0527e400502d0cb4f214dd0d2f2a323fc88ff924",
-        "receiverAddress": "0xee611225d5066b79f3cc25fe6c901fc96cd03376",
+        "receiverAddress": "0x75B98710D5995AB9992F02492B7568b43133161D",
         "amount": "14843582205666807097",
         "receipt": "Aaron"
       },
@@ -64,12 +64,6 @@
         "receiverAddress": "0x0363F3C31076a64b85Ceb69a28f958A7c1181CEe",
         "amount": "0035905649243921548",
         "receipt": "robin"
-      },
-      {
-        "tokenAddress": "0x0527e400502d0cb4f214dd0d2f2a323fc88ff924",
-        "receiverAddress": "0xCb5Fba4419ABC4D7C11af0C24BA0F2e555407F5b",
-        "amount": "0",
-        "receipt": "jlwaugh"
       }
     ]
   }
