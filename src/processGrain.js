@@ -108,9 +108,9 @@ const transferSettings = (rawScore, addressBook) => {
   const normalisedGrain = whitelistedGrain.map((user) => {
     return {
       "tokenAddress": tokenAddress,
-      "recieverAddress": user[0],
+      "receiverAddress": user[0],
       "ammount": BigNumber(user[1]).dividedBy(total).multipliedBy(tokensToMint).toString(),
-      "reciept": user[2]
+      "receipt": user[2]
     }
   });
   // console.log(normalisedGrain);
