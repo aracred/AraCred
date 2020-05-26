@@ -77,9 +77,9 @@ const mintSettings = (rawScore, addressBook) => {
 
   const normalisedGrain = whitelistedGrain.map((user) => [
     user[0],
-    BigNumber(user[1]).dividedBy(total).multipliedBy(tokensToMint).toString(),
+    BigNumber(user[1]).dividedBy(total).multipliedBy(tokensToMint).toString().replace(".", "")
   ]);
-  // console.log(normalisedGrain);
+  console.log(normalisedGrain);
   // ----------------------------------------------------------------
 
   const settings = [{}];

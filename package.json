@@ -49,7 +49,8 @@
     "@aragon/toolkit": "0.0.5",
     "bignumber.js": "9.0.0",
     "ethereumjs-abi": "^0.6.8",
-    "web3": "^1.2.5-rc.0"
+    "web3": "^1.2.5-rc.0",
+    "execa": "^4.0.2"
   },
   "devDependencies": {
     "documentation": "11.0.1",
