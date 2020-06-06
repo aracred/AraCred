@@ -3,7 +3,7 @@
 const fs = require('fs');
 const userName = require('os').userInfo().username;
 
-const {INFURA_KEY, PRIVATE_KEY} = process.env;
+const {INFURA_KEY, PRIVATE_KEY, environment} = require('../config/config.json');
 
 /**
  * produces the contents of `mainnet_key.json`. This file is used by the
@@ -13,7 +13,7 @@ const {INFURA_KEY, PRIVATE_KEY} = process.env;
 const fileContent = () => {
   return JSON.stringify(
     {
-      rpc: `https://mainnet.infura.io/v3/${INFURA_KEY}`,
+      rpc: `https://${environment}.infura.io/v3/${INFURA_KEY}`,
       keys: [`${PRIVATE_KEY}`],
     },
     null,
@@ -32,7 +32,7 @@ const saveFile = () => {
       console.log('created `~/.aragon` file');
     }
     fs.writeFile(
-      `/home/${userName}/.aragon/mainnet_key.json`,
+      `/home/${userName}/.aragon/${environment}_key.json`,
       fileContent(),
       (err) => {
         if (err) {
