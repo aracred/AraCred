@@ -1,6 +1,6 @@
 const execa = require("execa");
 
-const { mode } = require('../config/config.json')
+const { mode } = process.env
 
 async function main () {
     let output

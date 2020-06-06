@@ -3,7 +3,7 @@
 const fs = require('fs');
 const userName = require('os').userInfo().username;
 
-const {INFURA_KEY, PRIVATE_KEY, environment} = require('../config/config.json');
+const {INFURA_KEY, PRIVATE_KEY, environment} = process.env
 
 /**
  * produces the contents of `mainnet_key.json`. This file is used by the

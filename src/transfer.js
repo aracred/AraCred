@@ -7,7 +7,7 @@ const {
   financeAddress,
   payments,
   environment,
-} = require('../log/transactionSettings.json')[0];
+} = process.env
 
 async function main() {
   // Encode a bunch of payments.

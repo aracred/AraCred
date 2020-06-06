@@ -12,7 +12,7 @@ const {
   tokensToMint,
   tokenAddress,
   mode
-} = require('../config/config.json')
+} = process.env
 
 
 /**
