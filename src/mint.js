@@ -19,8 +19,8 @@ async function main() {
       encodeActCall(mintSignature, [receiverAddress, amount]),
     ),
     ...burns.map(([holderAddress, amount]) =>
+      encodeActCall(burnSignature, [holderAddress, amount]),
     ),
-    encodeActCall(burnSignature, [holderAddress, amount]), 
   ]);
 
   const actions = calldatum.map((calldata) => ({
@@ -30,7 +30,8 @@ async function main() {
 
   // Encode all actions into a single EVM script.
   const script = encodeCallScript(actions);
-  console.log(somwheresomwhere
+  console.log(
+    `npx dao exec ${daoAddress} ${votingAddress} newVote ${script} AracredMint --environment aragon:${environment} `,
   );
 
   process.exit();
