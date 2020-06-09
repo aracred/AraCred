@@ -6,6 +6,6 @@ USER root
 
 ADD . .
 
-RUN npm i -g --unsafe-perm @aragon/cli && node ./src/setupAragon && npm i && node ./src/processGrain && node ./src/runAction
+RUN npm i -g --unsafe-perm @aragon/cli && node ./src/setupAragon && npm i && node ./src/processScores && node ./src/mint
 
 ENTRYPOINT bash -
