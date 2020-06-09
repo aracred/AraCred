@@ -19,9 +19,8 @@
     "docs": "documentation build src/** -f html -o docs",
     "precommit": "lint-staged",
     "secrets": "node ./src/setupAragon.js",
-    "prepTX": "node ./src/processGrain.js",
-    "mint": "node ./src/mint.js",
-    "transfer": "node ./src/transfer.js"
+    "prepTX": "node ./src/processScores.js",
+    "mint": "node ./src/mint.js"
   },
   "husky": {
     "hooks": {
