@@ -1,70 +1,55 @@
 [
   {
     "daoAddress": "0xc466e089CfC2935dF3f471AC291402e00d41C9D7",
+    "tokenManagerAddress": "0x87a31b9a2ee0b7b7899192e94eec3334135d607e",
     "votingAddress": "0x29c58e25df47f1b958e1d707fb7b4a9800554d5c",
-    "financeAddress": "0x3d94088d031ac1eebd888aa61e741b6f10f4c6d8",
     "environment": "rinkeby",
-    "payments": [
-      {
-        "tokenAddress": "0x0527e400502d0cb4f214dd0d2f2a323fc88ff924",
-        "receiverAddress": "0x6a1cf24C645DB2e37141Fa12E70Cb67e56b336f3",
-        "amount": "56138529830705345085",
-        "receipt": "burrrata"
-      },
-      {
-        "tokenAddress": "0x0527e400502d0cb4f214dd0d2f2a323fc88ff924",
-        "receiverAddress": "0x75B98710D5995AB9992F02492B7568b43133161D",
-        "amount": "14843582205666807097",
-        "receipt": "Aaron"
-      },
-      {
-        "tokenAddress": "0x0527e400502d0cb4f214dd0d2f2a323fc88ff924",
-        "receiverAddress": "0x5790dB5E4D9e868BB86F5280926b9838758234DD",
-        "amount": "20524850892471999719",
-        "receipt": "evalir"
-      },
-      {
-        "tokenAddress": "0x0527e400502d0cb4f214dd0d2f2a323fc88ff924",
-        "receiverAddress": "0x9001A69310590CDce1f860d5C2F3eEB7D35757D1",
-        "amount": "4234537801518969859",
-        "receipt": "crisorg"
-      },
-      {
-        "tokenAddress": "0x0527e400502d0cb4f214dd0d2f2a323fc88ff924",
-        "receiverAddress": "0x3EfFf08Daf693181d21A5a6BE9D59599A3147F7a",
-        "amount": "2737483756731993151",
-        "receipt": "li"
-      },
-      {
-        "tokenAddress": "0x0527e400502d0cb4f214dd0d2f2a323fc88ff924",
-        "receiverAddress": "0x6215fBFbf0F6f1570808846c8F4fb357f2d81657",
-        "amount": "0002011592160613738",
-        "receipt": "Beanow"
-      },
-      {
-        "tokenAddress": "0x0527e400502d0cb4f214dd0d2f2a323fc88ff924",
-        "receiverAddress": "0xf7089651ccc842812C8A11244cAC0D520d6a645b",
-        "amount": "1458345751132135387",
-        "receipt": "benscholtz"
-      },
-      {
-        "tokenAddress": "0x0527e400502d0cb4f214dd0d2f2a323fc88ff924",
-        "receiverAddress": "0x0535ea48345a8F9bC9E0597Fa2c62aE50301a51D",
-        "amount": "0000775567425104436",
-        "receipt": "AlexMasmej"
-      },
-      {
-        "tokenAddress": "0x0527e400502d0cb4f214dd0d2f2a323fc88ff924",
-        "receiverAddress": "0x4744cda32bE7b3e75b9334001da9ED21789d4c0d",
-        "amount": "0023976952943109979",
-        "receipt": "audsssy"
-      },
-      {
-        "tokenAddress": "0x0527e400502d0cb4f214dd0d2f2a323fc88ff924",
-        "receiverAddress": "0x0363F3C31076a64b85Ceb69a28f958A7c1181CEe",
-        "amount": "0035905649243921548",
-        "receipt": "robin"
-      }
-    ]
+    "mints": [
+      [
+        "0x6a1cf24C645DB2e37141Fa12E70Cb67e56b336f3",
+        "56138529830705345085"
+      ],
+      [
+        "0x75B98710D5995AB9992F02492B7568b43133161D",
+        "14843582205666807097"
+      ],
+      [
+        "0x5790dB5E4D9e868BB86F5280926b9838758234DD",
+        "20524850892471999719"
+      ],
+      [
+        "0x9001A69310590CDce1f860d5C2F3eEB7D35757D1",
+        "4234537801518969859"
+      ],
+      [
+        "0x3EfFf08Daf693181d21A5a6BE9D59599A3147F7a",
+        "2737483756731993151"
+      ],
+      [
+        "0x6215fBFbf0F6f1570808846c8F4fb357f2d81657",
+        "0002011592160613738"
+      ],
+      [
+        "0xf7089651ccc842812C8A11244cAC0D520d6a645b",
+        "1458345751132135387"
+      ],
+      [
+        "0x0535ea48345a8F9bC9E0597Fa2c62aE50301a51D",
+        "0000775567425104436"
+      ],
+      [
+        "0x4744cda32bE7b3e75b9334001da9ED21789d4c0d",
+        "0023976952943109979"
+      ],
+      [
+        "0x0363F3C31076a64b85Ceb69a28f958A7c1181CEe",
+        "0035905649243921548"
+      ],
+      [
+        "0xCb5Fba4419ABC4D7C11af0C24BA0F2e555407F5b",
+        "0000000000000000000"
+      ]
+    ],
+    "burns": []
   }
 ]
