@@ -6,6 +6,6 @@ USER root
 
 ADD . .
 
-RUN npm i -g --unsafe-perm @aragon/cli && yarn
+RUN yarn global add --unsafe-perm @aragon/cli && yarn
 
 ENTRYPOINT bash -
